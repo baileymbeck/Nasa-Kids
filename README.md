@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-{
+
 **** REQUIRED ****
 Must use ReactJS in some way (even if minimal)
 Must use a Node and Express Web Server
@@ -13,7 +13,7 @@ Must have a polished frontend/UI
 Must have folder structure that meets MVC Paradigm
 Must meet good quality coding standards (indentation, scoping, naming)
 Must not expose sensitive API key information on the server
-}
+
 
 ## Available Scripts
 
