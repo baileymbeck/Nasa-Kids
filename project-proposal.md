@@ -9,6 +9,7 @@
 ![Image of screen layouts](/images/wireframe.jpg)
 ![Image of home page](images/home.png)
 ![Image of data flow](images/DataFlow.png)
+![Image of screen by screen](images/screen-by-screen.png)
 
 
 ## Group Members
