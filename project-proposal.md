@@ -8,7 +8,7 @@
 ## Detailed  Screen Layouts
 ![Image of screen layouts](/images/wireframe.jpg)
 ![Image of home page](images/home.png)
-![Image of data flow](/images/dataflow.png)
+![Image of data flow](images/DataFlow.png)
 
 
 ## Group Members
