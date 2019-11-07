@@ -7,6 +7,7 @@
 
 ## Detailed  Screen Layouts
 ![Image of screen layouts](/images/wireframe.jpg)
+![Image of data flow](/images/dataflow.png)
 
 
 ## Group Members
@@ -17,9 +18,9 @@
 
 
 ## Schedule for completion of tasks
-    * 
-    * Deliverables 11/7
-    * MVP 11/14
+    * Plan, Design, Research 11/7
+    * Working MVP 11/14
+    * Presentation 11/18
 
 
 ## Project Breakdown
