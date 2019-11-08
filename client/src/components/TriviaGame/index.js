@@ -29,45 +29,49 @@ const style = {
     }
 }
 
+class TrivaGame extends React.Component {
+    state= {
+        gameStateIndex: 0, 
+        correct: 0, 
+        incorrect: 0
+    }
 
+    // const [state, setState] = useState({ gameStateIndex: 0, correct: 0, incorrect: 0 })  //state is object, setState is function
 
-function TrivaGame() {
-
-    const [state, setState] = useState({ gameStateIndex: 0, correct: 0, incorrect: 0 })  //state is object, setState is function
-
-    function nextState() {
-        let correct = state.correct;
-        let incorrect = state.incorrect;
-        let gameStateIndex = state.gameStateIndex + 1
-        if (state.gameStateIndex === 2) {
+    nextState = () => {
+        let correct = this.state.correct;
+        let incorrect = this.state.incorrect;
+        let gameStateIndex = this.state.gameStateIndex + 1
+        if (this.state.gameStateIndex === 2) {
             gameStateIndex = 0
             correct = 0
             incorrect = 0
         }
-        setState({ ...state, gameStateIndex, correct, incorrect })
+        this.setState({ ...this.state, gameStateIndex, correct, incorrect })
     }
 
     //if key='incorrect'; state["incorrect"]  === state.incorrect === state[key]
 
-    function answerQuestion(correct) {
+    answerQuestion = (correct) => {
+        console.log('sdfs')
         const key = correct ? "correct" : "incorrect"
-        setState({ ...state, [key]: state[key] + 1 })
+        this.setState({ ...this.state, [key]: this.state[key] + 1 })
     }
 
-    const gamesStates = [
-        <Start nextState={nextState} />,
-        <Game nextState={nextState} answerQuestion={answerQuestion} />,
-        <End nextState={nextState} correct={state.correct} incorrect={state.incorrect}/>
-    ]
-
-    return (
+    render() { 
+        const gamesStates = [
+            <Start nextState={this.nextState} />,
+            <Game nextState={this.nextState} answerQuestion={this.answerQuestion} />,
+            <End nextState={this.nextState} correct={this.state.correct} incorrect={this.state.incorrect} />
+        ]
+        return(
         <div style={style.main}>
             <div style={style.panel}>
                 <h1 style={style.title}>Space</h1>
-                {gamesStates[state.gameStateIndex]}
+                {gamesStates[this.state.gameStateIndex]}
             </div>
         </div>
-    )
+    )}
 }
 export default TrivaGame;
 
