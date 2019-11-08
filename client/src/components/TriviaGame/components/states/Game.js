@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const questions = {
+const questions = [{
             question: "What was the first full length CGI movie?",
             answers: ["A Bug's Life", "Monsters Inc.", "Toy Story", "The Lion King"],
             correctAnswer: "Toy Story",
@@ -41,7 +41,7 @@ const questions = {
             answers: ["Mr.Zhou", "Mr.Driggers", "Mr.Belding", "Mr.Page"],
             correctAnswer: "Mr.Belding",
             image: "assets/images/belding.gif"
-          };
+          }];
                
 
 function Game ({nextState, answerQuestion}) {
