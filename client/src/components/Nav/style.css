@@ -8,6 +8,7 @@
     background-repeat: repeat;
     background-size: 150px;
     height: 100px;
+    position: fixed;
 }
 
 .title {
