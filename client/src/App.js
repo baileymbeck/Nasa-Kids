@@ -18,10 +18,11 @@ function App() {
       <div style={style.app}>
         {/* <Nav/> */}
           <Switch>
-            {/* <Route exact path="/" component={TriviaGame} /> */}
-            {/* <Route exact path="/login" component={TriviaGame} /> */}
-            {/* <Route exact path="/profile" component={TriviaGame} /> */}
-            <Route exact path="/trivia" component={TriviaGame} />
+            {/* <Route exact path="/" component={} /> */}
+            {/* <Route exact path="/login" component={} /> */}
+            {/* <Route exact path="/profile" component={} /> */}
+            {/* <Route exact path="/clickygame" component={Clicky Game} /> */}
+          <Route exact path="/trivia" component={TriviaGame} />
           </Switch>
         {/* <Footer/> */}
       </div>
