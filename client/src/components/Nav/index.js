@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./style.css";
 import Logo from "./NASA.png";
 import Settings from "./settings.png";
-import Font1 from "./21592_Kidprint.ttf"
+import Font1 from "./21592_Kidprint.ttf";
 
 class Nav extends Component {
   state = {
