@@ -5,13 +5,13 @@ import End from "./components/states/End"
 
 const style = {
     main: {
-        backgroundColor: "red",
         height: "100%",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         paddingTop: "30px",
-        paddingBottom: "30px"
+        paddingBottom: "30px",
+        marginTop: "125px"
 
 
     },

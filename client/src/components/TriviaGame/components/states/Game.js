@@ -44,30 +44,30 @@ const questions = [{
 }];
 
 
-// function Game({ nextState, answerQuestion }) {
-//     return (
-//         <div>
+function Game({ nextState, answerQuestion }) {
+    return (
+        <div>
      
       
       
-//                 <div>
-//                     <button onClick={nextState}>End Game</button>
-//                     <button onClick={() => answerQuestion(true)}>Correct</button>
-//                     <button onClick={() => answerQuestion(false)}>Incorrect</button>
-//                 </div>
-//         </div>
+                <div>
+                    <button onClick={nextState}>End Game</button>
+                    <button onClick={() => answerQuestion(true)}>Correct</button>
+                    <button onClick={() => answerQuestion(false)}>Incorrect</button>
+                </div>
+        </div>
 
-//     )
-// }
-const countStartNumber = 30;
+    )
+}
+// const countStartNumber = 30;
 
-class Game extends React.Component{
-    state={
-        questions,
-        correct: 0,
-        incorrect: 0,
-        timer: 30
-    };
+// class Game extends React.Component{
+//     state={
+//         questions,
+//         correct: 0,
+//         incorrect: 0,
+//         timer: 30
+//     };
 
     // componentDidMount() {
     //     this.setState{(questions)}
@@ -98,6 +98,6 @@ class Game extends React.Component{
                 
     //         </div>
     //     )
-    }
+    // }
 
 export default Game
