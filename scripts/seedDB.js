@@ -1,16 +1,16 @@
 // Database for login storage
 
-// const mongoose = require("mongoose");
-// const db = require("../models");
+const mongoose = require("mongoose");
+const db = require("../models");
 
-// // This file empties the Books collection and inserts the books below
+// This file empties the Users collection and inserts the users below
 
-// mongoose.connect(
-//   process.env.MONGODB_URI ||
-//   "mongodb://localhost/userauthentication"
-// );
+mongoose.connect(
+  process.env.MONGODB_URI ||
+  "mongodb://localhost/userauthentication"
+);
 
-// const bookSeed = [
+// const userSeed = [
 //   {
 //     userName: "",
 //     password: "",
@@ -23,9 +23,9 @@
 //   }
 // ];
 
-// db.Book
+// db.User
 //   .remove({})
-//   .then(() => db.Book.collection.insertMany(bookSeed))
+//   .then(() => db.User.collection.insertMany(userSeed))
 //   .then(data => {
 //     console.log(data.result.n + " records inserted!");
 //     process.exit(0);

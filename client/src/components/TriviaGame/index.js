@@ -57,7 +57,7 @@ function TrivaGame() {
     const gamesStates = [
         <Start nextState={nextState} />,
         <Game nextState={nextState} answerQuestion={answerQuestion} />,
-        <End nextState={nextState} correct={state.correct} incorrect={state.incorrect}/>
+        <End nextState={nextState} correct={state.correct} incorrect={state.incorrect}/>,
     ]
 
     return (
