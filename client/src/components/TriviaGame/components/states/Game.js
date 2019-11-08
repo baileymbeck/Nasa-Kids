@@ -44,60 +44,65 @@ const questions = [{
 }];
 
 
-function Game({ nextState, answerQuestion }) {
-    return (
-        <div>
-     
-      
-      
-                <div>
-                    <button onClick={nextState}>End Game</button>
-                    <button onClick={() => answerQuestion(true)}>Correct</button>
-                    <button onClick={() => answerQuestion(false)}>Incorrect</button>
-                </div>
-        </div>
+// function Game({ nextState, answerQuestion }) {
+//     return (
+//         <div>
 
-    )
+
+
+//                 <div>
+//                     {/* <button onClick={nextState}>End Game</button>
+//                     <button onClick={() => answerQuestion(true)}>Correct</button>
+//                     <button onClick={() => answerQuestion(false)}>Incorrect</button> */}
+//                 </div>
+//         </div>
+
+//     )
+// }
+const timer = 30;
+
+export default class Game extends React.Component {
+    state = {
+        correct: 0,
+        incorrect: 0,
+        questionIndex: 0,
+        timer
+
+    };
+
+    //function to render question to the page
+    handleQuestion = (userAnswer) => {
+        //if the answer they clciked on is equal to the correct answer
+        const correctAnswer = questions[this.state.questionIndex].correctAnswer
+        if (userAnswer === correctAnswer) {
+            this.props.answerQuestion(true)
+        }else {
+            this.props.answerQuestion(false)
+        }
+
+    }
+
+    nextQuestion = () => {
+
+    }
+
+    //Countdown function
+    countdown = () => {
+
+    }
+    //time up function
+    //on click function
+
+
+    render() {
+        return (
+            <div>
+                <h2>Time Remaining: {this.state.time}</h2>
+                <h2>{questions[this.state.questionIndex].question}</h2>
+                <div>{questions[this.state.questionIndex].answers.map((answer, index) => {
+                    return (<h3 onClick={() => this.handleQuestion(answer)} key={index} >{answer}</h3>)
+                })}</div>
+            </div>
+        )
+    }
 }
-// const countStartNumber = 30;
-
-// class Game extends React.Component{
-//     state={
-//         questions,
-//         correct: 0,
-//         incorrect: 0,
-//         timer: 30
-//     };
-
-    // componentDidMount() {
-    //     this.setState{(questions)}
-    //     console.log(this)
-    // };
-    
-
-    // //function to render question to the page
-    // handleQuestion = (nextState, answerQuestion) => {
-
-    // }
-
-    // NextQuestion = () => {
-
-    // }
-
-    // //Countdown function
-    // countdown() {
-
-    // }
-    // //time up function
-    // //on click function
-
-
-    // render() {
-    //     return(
-    //         <div>
-                
-    //         </div>
-    //     )
-    // }
-
-export default Game
