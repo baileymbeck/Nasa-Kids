@@ -7,6 +7,9 @@
 
 ## Detailed  Screen Layouts
 ![Image of screen layouts](/images/wireframe.jpg)
+![Image of home page](images/home.png)
+![Image of data flow](images/DataFlow.png)
+![Image of screen by screen](images/screen-by-screen.png)
 
 
 ## Group Members
@@ -17,9 +20,11 @@
 
 
 ## Schedule for completion of tasks
-    * 
-    * Deliverables 11/7
-    * MVP 11/14
+    * Plan, Design, Research 11/7
+    * User Login 11/11
+    * Functional Game interface 11/11
+    * Working MVP 11/14
+    * Presentation 11/18
 
 
 ## Project Breakdown

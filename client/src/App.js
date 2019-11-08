@@ -1,25 +1,31 @@
-import React from "react";
+import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import ClickyApp from "./components/Clicky/ClickyApp";
+import logo from './logo.svg';
+import './App.css';
+import TriviaGame from "./components/TriviaGame"
 
+const style = {
+  app: {
+    height: '100vh',
+    display: 'flex',
+    flexDirection: 'column',
+  }
+}
 
 function App() {
   return (
     <Router>
-    <div>
-      <h1> Check out our NASA Kids app!</h1>
-      <p>Play a game by clicking on any of the following pictures.</p>
-      <div>
-      <img src= "./click.png" alt="Clicky Game" />
+      <div style={style.app}>
+        {/* <Nav/> */}
+          <Switch>
+            {/* <Route exact path="/" component={} /> */}
+            {/* <Route exact path="/login" component={} /> */}
+            {/* <Route exact path="/profile" component={} /> */}
+            {/* <Route exact path="/clickygame" component={Clicky Game} /> */}
+          <Route exact path="/trivia" component={TriviaGame} />
+          </Switch>
+        {/* <Footer/> */}
       </div>
-      <Switch>
-        
-      <Route exact path="/clicky" component={ClickyApp} />  
-
-
-      </Switch>
-    </div>
-
     </Router>
   );
 }
