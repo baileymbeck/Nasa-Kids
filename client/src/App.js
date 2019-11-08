@@ -1,16 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import logo from './logo.svg';
 import './App.css';
 import TriviaGame from "./components/TriviaGame";
 import Nav from "./components/Nav";
-import Home from "./pages/Home"
+import Home from "./pages/Home/Home";
 
 const style = {
   app: {
     height: '100vh',
     display: 'flex',
-    flexDirection: 'column',
+    flexDirection: 'column'
   }
 }
 

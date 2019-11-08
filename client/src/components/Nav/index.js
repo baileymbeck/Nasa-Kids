@@ -21,10 +21,6 @@ class Nav extends Component {
     this.setState(newState);
   };
 
-  toggleNav = () => {
-    this.setState({ open: !this.state.open });
-  };
-
   componentDidMount() {
     window.addEventListener("resize", this.updateWidth);
   }
