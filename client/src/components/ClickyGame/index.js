@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import ImageCard from "./components/ImageCard";
+import ImageCard from "./components/ImageCard"; 
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
-import cards from "./cards.json"
+import cards from "./cards.json";
 
 class App extends Component {
+
   state = {
     cards,
     score: 0,
@@ -12,6 +13,11 @@ class App extends Component {
     rightWrong: "Click on an image to earn points, but don't click on any more than once!",
     clicked:[]
   };
+
+
+  componentDidMount() {
+    console.log(this.state.cards);
+  }
 
   shuffleArray = array => {
     for (var i=array.length -1; i > 0; i--) {

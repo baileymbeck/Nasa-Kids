@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import logo from './logo.svg';
 import './App.css';
-import TriviaGame from "./components/TriviaGame"
+import TriviaGame from "./components/TriviaGame";
+import ClickyGame from "./components/ClickyGame";
 
 const style = {
   app: {
@@ -21,7 +21,7 @@ function App() {
             {/* <Route exact path="/" component={} /> */}
             {/* <Route exact path="/login" component={} /> */}
             {/* <Route exact path="/profile" component={} /> */}
-            {/* <Route exact path="/clickygame" component={Clicky Game} /> */}
+            <Route exact path="/clickygame" component={ClickyGame} />
           <Route exact path="/trivia" component={TriviaGame} />
           </Switch>
         {/* <Footer/> */}
