@@ -50,18 +50,17 @@ class TrivaGame extends React.Component {
         this.setState({ ...this.state, gameStateIndex, correct, incorrect })
     }
 
-    //if key='incorrect'; state["incorrect"]  === state.incorrect === state[key]
-
-    answerQuestion = (correct) => {
-        console.log('sdfs')
-        const key = correct ? "correct" : "incorrect"
-        this.setState({ ...this.state, [key]: this.state[key] + 1 })
+    setScore = (correct, incorrect) => {
+        const newState = { ...this.state, correct, incorrect, gameStateIndex: this.state.gameStateIndex + 1 }
+        this.setState(newState)
     }
+
+    //if key='incorrect'; state["incorrect"]  === state.incorrect === state[key]
 
     render() { 
         const gamesStates = [
             <Start nextState={this.nextState} />,
-            <Game nextState={this.nextState} answerQuestion={this.answerQuestion} />,
+            <Game setScore={this.setScore} />,
             <End nextState={this.nextState} correct={this.state.correct} incorrect={this.state.incorrect} />
         ]
         return(

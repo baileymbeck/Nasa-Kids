@@ -44,21 +44,6 @@ const questions = [{
 }];
 
 
-// function Game({ nextState, answerQuestion }) {
-//     return (
-//         <div>
-
-
-
-//                 <div>
-//                     {/* <button onClick={nextState}>End Game</button>
-//                     <button onClick={() => answerQuestion(true)}>Correct</button>
-//                     <button onClick={() => answerQuestion(false)}>Incorrect</button> */}
-//                 </div>
-//         </div>
-
-//     )
-// }
 const timer = 30;
 
 export default class Game extends React.Component {
@@ -67,31 +52,37 @@ export default class Game extends React.Component {
         incorrect: 0,
         questionIndex: 0,
         timer
-
     };
+
+    answerQuestion = (correct) => {
+        const key = correct ? "correct" : "incorrect"
+        const newState = { ...this.state, [key]: this.state[key] + 1 }
+        if (this.state.questionIndex < questions.length - 1) {
+            this.setState({
+                ...newState,
+                questionIndex: this.state.questionIndex + 1,
+            })
+        } else {
+            this.props.setScore(newState.correct, newState.incorrect)
+        }
+    }
 
     //function to render question to the page
     handleQuestion = (userAnswer) => {
         //if the answer they clciked on is equal to the correct answer
         const correctAnswer = questions[this.state.questionIndex].correctAnswer
         if (userAnswer === correctAnswer) {
-            this.props.answerQuestion(true)
+            this.answerQuestion(true)
         }else {
-            this.props.answerQuestion(false)
-        }
-
-    }
-
-    nextQuestion = () => {
-
+            this.answerQuestion(false)
+        }        
     }
 
     //Countdown function
     countdown = () => {
 
     }
-    //time up function
-    //on click function
+   
 
 
     render() {
@@ -103,6 +94,6 @@ export default class Game extends React.Component {
                     return (<h3 onClick={() => this.handleQuestion(answer)} key={index} >{answer}</h3>)
                 })}</div>
             </div>
-        )
+        ) 
     }
 }
