@@ -2,16 +2,17 @@
     cursor: pointer;
     background: #fff;
     border-radius: 10px;
-    height: 200px;
-    margin: 35px;
+    height: 150px;
+    margin: 2rem;
     position: relative;
-    width: 200px;
+    width: 150px;
     box-shadow: 0 3px 6px #999, 0 3px 6px #999;
 }
   
 .card > .img-container {
     height: 100%;
     margin: auto;
+    overflow: hidden;
 }
 
 .card > .img-container > img {
