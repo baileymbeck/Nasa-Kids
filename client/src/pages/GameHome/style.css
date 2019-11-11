@@ -5,9 +5,9 @@
 
 h1 {
     font-family: "./Smile-ICG-Medium.ttf";
+    font-size: 50px;
 }
 
-.imageofday {
-    height: 200px;
+.top {
     margin: 125px auto 10px;
 }

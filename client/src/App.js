@@ -5,6 +5,7 @@ import TriviaGame from "./components/TriviaGame";
 import ClickyGame from "./components/ClickyGame";
 import Nav from "./components/Nav";
 import Home from "./pages/Home/Home";
+import GameHome from "./pages/GameHome/GameHome"
 
 const style = {
   app: {
@@ -21,6 +22,7 @@ function App() {
         <Nav/>
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route exact path="/gamehome" component={GameHome} />
             {/* <Route exact path="/login" component={} /> */}
             {/* <Route exact path="/profile" component={} /> */}
             <Route exact path="/clickygame" component={ClickyGame} />
