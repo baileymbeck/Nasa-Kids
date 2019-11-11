@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./style.css";
 import Logo from "./NASA.png";
 import Settings from "./settings.png";
-import Font1 from "./21592_Kidprint.ttf"
+import Font1 from "./21592_Kidprint.ttf";
 
 class Nav extends Component {
   state = {
@@ -35,8 +35,8 @@ class Nav extends Component {
         <Link className="navbar-brand" to="/">
             <img className="settings" src={Settings} />
         </Link>
-        <div className="title" style={{fontFamily: {Font1}}}>Welcome<br />
-        (Child's Name)</div>
+        <div className="title" style={{fontFamily: {Font1}}}>WELCOME<br />
+        Camila</div>
         <div>
             <img className="logo" src={Logo}/>
         </div>

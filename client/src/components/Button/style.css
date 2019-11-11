@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "./Smile-ICG-Medium.ttf";
+    src: url("./Smile-ICG-Medium.ttf");
+}
+
+.text {
+    padding: 35px 0;
+    font-family: "./Smile-ICG-Medium.ttf";
+    color: black;
+    font-size: 45px;
+    text-align: center;
+    line-height: 45px;
+    margin: auto;
+    float: left;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    z-index: 999;
+}
+
+.card {
+    cursor: pointer;
+    background: rgb(247, 240, 204);
+    border-radius: 10px;
+    height: 175px;
+    margin: 20px;
+    position: relative;
+    width: 175px;
+    box-shadow: 0 3px 6px black, 0 3px 6px black;
+    float: left;
+}
+  
+.card > .img-container {
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+}
+
+.card > .txt-container {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+}
+
+.card > .img-container > img {
+    width: 100%;
+    justify-content: center;
+}
+
+.card:hover {
+    box-shadow: 0 10px 13px black, 0 10px 13px black;
+}
