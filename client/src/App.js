@@ -18,12 +18,12 @@ function App() {
   return (
     <Router>
       <div style={style.app}>
-        {/* <Nav/> */}
+        <Nav/>
           <Switch>
-            {/* <Route exact path="/" component={Home} /> */}
+            <Route exact path="/" component={Home} />
             {/* <Route exact path="/login" component={} /> */}
             {/* <Route exact path="/profile" component={} /> */}
-            <Route exact path="/clickygame" component={ClickyGame} />
+            {/* <Route exact path="/clickygame" component={Clicky Game} /> */}
           <Route exact path="/trivia" component={TriviaGame} />
           </Switch>
         {/* <Footer/> */}
