@@ -62,6 +62,7 @@ class App extends Component {
       clicked: []
     });
     this.handleShuffle();
+    
   };
 
   handleShuffle = () => {
