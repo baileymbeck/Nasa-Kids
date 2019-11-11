@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 import TriviaGame from "./components/TriviaGame";
 import Nav from "./components/Nav";
-import Home from "./pages/Home/Home"
+import Home from "./pages/Home/Home";
+import GameHome from "./pages/GameHome/GameHome"
 
 const style = {
   app: {
@@ -20,6 +21,7 @@ function App() {
         <Nav/>
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route exact path="/gamehome" component={GameHome} />
             {/* <Route exact path="/login" component={} /> */}
             {/* <Route exact path="/profile" component={} /> */}
             {/* <Route exact path="/clickygame" component={Clicky Game} /> */}
