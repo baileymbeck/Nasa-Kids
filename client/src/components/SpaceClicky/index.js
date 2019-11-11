@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ImageCard from "./components/ImageCard"; 
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
-import cards from "./cards.json";
+import cards from "./space.json";
 import "./style.css";
 
 class App extends Component {
@@ -11,7 +11,7 @@ class App extends Component {
     cards,
     score: 0,
     highscore: 0,
-    rightWrong: "Click on a planet to earn points, but don't click on it more than once!",
+    rightWrong: "Click on a space object to earn points, but don't click on it more than once!",
     clicked:[]
   };
 
@@ -44,7 +44,7 @@ class App extends Component {
     const newScore = this.state.score + 1;
     this.setState({
       score: newScore,
-      rightWrong: "Click on a planet to earn points, but don't click on it more than once!"
+      rightWrong: "Click on a space object to earn points, but don't click on it more than once!"
     });
     if (newScore >= this.state.highscore) {
       this.setState({ highscore: newScore });
