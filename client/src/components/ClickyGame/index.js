@@ -3,6 +3,7 @@ import ImageCard from "./components/ImageCard";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import cards from "./cards.json";
+import "./style.css";
 
 class App extends Component {
 
@@ -10,7 +11,7 @@ class App extends Component {
     cards,
     score: 0,
     highscore: 0,
-    rightWrong: "Click on an image to earn points, but don't click on any more than once!",
+    rightWrong: "Click on a planet to earn points, but don't click on it more than once!",
     clicked:[]
   };
 
@@ -43,12 +44,12 @@ class App extends Component {
     const newScore = this.state.score + 1;
     this.setState({
       score: newScore,
-      rightWrong: "Click on an image to earn points, but don't click on any more than once!"
+      rightWrong: "Click on a planet to earn points, but don't click on it more than once!"
     });
     if (newScore >= this.state.highscore) {
       this.setState({ highscore: newScore });
     }
-    else if (newScore === 12) {
+    else if (newScore === 8) {
       this.setState({ rightWrong: "You win!" });
     }
     this.handleShuffle();
@@ -58,7 +59,7 @@ class App extends Component {
     this.setState({
       score: 0,
       highscore: this.state.highscore,
-      rightWrong: "You lose!",
+      rightWrong: "Try again!",
       clicked: []
     });
     this.handleShuffle();
@@ -72,9 +73,9 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-      <Title score={this.state.score} highscore={this.state.highscore} rightWrong={this.state.rightWrong}>Clicky Game!</Title>
-      <Wrapper>
+      <div className="row">
+      <Title score={this.state.score} highscore={this.state.highscore} rightWrong={this.state.rightWrong}></Title>
+      <Wrapper className="card-wrapper">
         {this.state.cards.map(card => (
           <ImageCard 
             id={card.id}

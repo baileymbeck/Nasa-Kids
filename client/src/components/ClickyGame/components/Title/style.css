@@ -1,20 +1,22 @@
 .header {
     display: block;
+    margin-top: 100px;
     width: 100%;
     text-align: center;
     text-decoration: none;
     color: white;
     min-height: 70px;
-    background: rgb(121, 9, 155);
-    font-size: 35px;
+    background: url("./Stars-background.jpg");
+    background-repeat: repeat;
     font-weight: bolder;
     padding: 20px;
     font-family: sans-serif;
     z-index: 999;
 }
 
-.title {
+.planet-title {
     float: left;
+    font-size: 25px;
 }
 
 .instructions {
@@ -24,4 +26,5 @@
 
 .scores {
     float: right;
+    font-size: 25px;
 }
