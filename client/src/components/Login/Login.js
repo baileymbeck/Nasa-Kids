@@ -2,6 +2,8 @@
 import React, {Component} from 'react';
 import { Input, TextArea, FormBtn } from "../../components/Form";
 import { Col, Row, Container } from "../../components/Grid";
+import "./login.css";
+
 // import axios from 'axios';
 // install axios in both package.json
 
@@ -10,6 +12,7 @@ import { Col, Row, Container } from "../../components/Grid";
 class LoginPage extends Component {
   state = {
     user: "",
+    password: "",
     email: ""
   }
 // axios.post(/)
@@ -19,27 +22,27 @@ class LoginPage extends Component {
       <Container fluid>
         <Row>
           <Col size="md-6">
-          <form>
+          <form className="formContainer">
               <Input
-                value={this.state.title}
+                value={this.state.user}
                 onChange={this.handleInputChange}
-                name="title"
-                placeholder="Title (required)"
+                name="user"
+                placeholder="Username (required)"
               />
               <Input
-                value={this.state.author}
+                value={this.state.email}
                 onChange={this.handleInputChange}
-                name="author"
-                placeholder="Author (required)"
+                name="email"
+                placeholder="Email (required)"
               />
-              <TextArea
-                value={this.state.synopsis}
+               <Input
+                value={this.state.password}
                 onChange={this.handleInputChange}
-                name="synopsis"
-                placeholder="Synopsis (Optional)"
+                name="password"
+                placeholder="Password (required)"
               />
               <FormBtn
-                disabled={!(this.state.author && this.state.title)}
+                disabled={!(this.state.user && this.state.email && this.state.password)}
                 onClick={this.handleFormSubmit}
               >
                 Submit Book

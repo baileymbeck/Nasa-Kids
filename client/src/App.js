@@ -1,17 +1,16 @@
 import React, {Component} from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import logo from './logo.svg';
 import './App.css';
-import TriviaGame from "./components/TriviaGame"
-import LoginPage from "./components/Login/Login";
-import { STATES } from 'mongoose';
-
+import TriviaGame from "./components/TriviaGame";
+import Nav from "./components/Nav";
+import Home from "./pages/Home/Home";
+import LoginPage from './components/Login/Login';
 
 const style = {
   app: {
     height: '100vh',
     display: 'flex',
-    flexDirection: 'column',
+    flexDirection: 'column'
   }
 }
 
@@ -28,10 +27,10 @@ class App extends Component {
       // this.state.userLogin ?  () : <h3> please sign up </h3>;
       <Router>
       <div style={style.app}>
-        {/* <Nav/> */}
+        <Nav/>
           <Switch>
-            <Route exact path="/" component={LoginPage} />
-            {/* <Route exact path="/login" component={} /> */}
+            <Route exact path="/" component={Home} />
+            <Route exact path="/login" component={LoginPage} />
             {/* <Route exact path="/profile" component={} /> */}
             {/* <Route exact path="/clickygame" component={Clicky Game} /> */}
           <Route exact path="/trivia" component={TriviaGame} />
