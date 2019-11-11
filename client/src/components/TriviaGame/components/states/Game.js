@@ -19,7 +19,7 @@ const questions = [{
 }, {
     question: "What has a gravitational pull so strong that even light cannot escape it?",
     answers: ["Black hole", "The Moon", "Supernova", "The Sun"],
-    correctAnswer: "A black hole",
+    correctAnswer: "Black hole",
     image: "https://media.giphy.com/media/LtWIXcIgXsGiI/giphy.gif"
 }, {
     question: "Earth is located in which galaxy?",
@@ -28,19 +28,19 @@ const questions = [{
     image: "https://media.giphy.com/media/YNk9HRcH9zJfi/giphy.gif"
 }, {
     question: "Who was the first person to walk on the moon?",
-    answers: ["Dice", "Mirror", "Fresh", "Cab"],
-    correctAnswer: "Fresh",
-    image: "assets/images/fresh.gif"
+    answers: ["Buzz Aldrin", "John Glenn", "Neil Armstrong", "Sally Ride"],
+    correctAnswer: "Neil Armstrong",
+    image: "https://media.giphy.com/media/f95jwQbVwwGgDI5BE3/giphy.gif"
 }, {
-    question: "What was Doug's best friend's name?",
-    answers: ["Skeeter", "Mark", "Zach", "Cody"],
-    correctAnswer: "Skeeter",
-    image: "assets/images/skeeter.gif"
+    question: "What is the hottest planet in our solar system?",
+    answers: ["Venus", "Mercury", "Neptune", "Mars"],
+    correctAnswer: "Venus",
+    image: "https://media.giphy.com/media/3ov9jMqcKSVDAvLJgQ/giphy.gif"
 }, {
-    question: "What was the name of the principal at Bayside High in Saved By The Bell?",
-    answers: ["Mr.Zhou", "Mr.Driggers", "Mr.Belding", "Mr.Page"],
-    correctAnswer: "Mr.Belding",
-    image: "assets/images/belding.gif"
+    question: "What is the name of the first satellite sent into space?",
+    answers: ["International Space Station", "Calipso", "Sputnik", "Skylab"],
+    correctAnswer: "Sputnik",
+    image: "http://giphygifs.s3.amazonaws.com/media/Jo5NLNfCcE4Rq/giphy.gif"
 }];
 
 
