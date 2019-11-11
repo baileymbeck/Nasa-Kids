@@ -2,18 +2,18 @@ import React from "react";
 
 
 const questions = [{
-    question: "What was the first full length CGI movie?",
-    answers: ["A Bug's Life", "Monsters Inc.", "Toy Story", "The Lion King"],
-    correctAnswer: "Toy Story",
-    image: "https://media.giphy.com/media/RpfIXomvjCh8I/giphy.gif"
+    question: "How old is the universe?",
+    answers: ["100 million years", "3 billion years", "13.8 billion years", "500 million years"],
+    correctAnswer: "13.8 billion years",
+    image: "https://media.giphy.com/media/2WH6sqGKm027uq1Q9G/giphy.gif"
 }, {
-    question: "Which of these is NOT a name of one of the Spice Girls?",
-    answers: ["Sporty Spice", "Fred Spice", "Scary Spice", "Posh Spice"],
-    correctAnswer: "Fred Spice",
-    image: "assets/images/spicegirls.gif"
+    question: "What is the largest planet in our solar system?",
+    answers: ["Mercury", "Jupiter", "Moon", "Earth"],
+    correctAnswer: "Jupiter",
+    image: "https://media.giphy.com/media/l0MYIKGlXPrn0Z4uQ/giphy.gif"
 }, {
-    question: "Which NBA team won the most titles in the 90s?",
-    answers: ["New York Knicks", "Portland Trailblazers", "Los Angeles Lakers", "Chicago Bulls"],
+    question: "What is the most common type of star found in the milky way?",
+    answers: ["New York Knicks", "Portland Trailblazers", "Los Angeles Lakers", "Red supergiant stars"],
     correctAnswer: "Chicago Bulls",
     image: "assets/images/bulls.gif"
 }, {
