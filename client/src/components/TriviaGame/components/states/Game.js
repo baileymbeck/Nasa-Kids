@@ -15,7 +15,7 @@ const questions = [{
     question: "What is the most common type of star found in the milky way?",
     answers: ["Red giant star", "Neutron stars", "Supergiant stars", "Red dwarf stars"],
     correctAnswer: "Red dwarf stars",
-    image: "https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif"
+    image: "http://giphygifs.s3.amazonaws.com/media/GC7C2Fi902BDG/giphy.gif"
 }, {
     question: "What has a gravitational pull so strong that even light cannot escape it?",
     answers: ["Black hole", "The Moon", "Supernova", "The Sun"],
@@ -25,7 +25,7 @@ const questions = [{
     question: "Earth is located in which galaxy?",
     answers: ["Milky Way Galaxy", "Whirlpool Galaxy", "Andromeda Galaxy", "Pinwheel Galaxy"],
     correctAnswer: "Milky Way Galaxy",
-    image: "https://media.giphy.com/media/YNk9HRcH9zJfi/giphy.gif"
+    image: "http://giphygifs.s3.amazonaws.com/media/FY9chKp6rulXy/giphy.gif"
 }, {
     question: "Who was the first person to walk on the moon?",
     answers: ["Buzz Aldrin", "John Glenn", "Neil Armstrong", "Sally Ride"],
@@ -109,9 +109,6 @@ export default class Game extends React.Component {
     }
 
 
-
-
-
     render() {
         return (
             <div>
@@ -128,8 +125,8 @@ export default class Game extends React.Component {
                     :
                     <div>
 
-                        <h2>{this.state.answerCorrect ? "Correct" : "Wrong"}</h2>
-                        <h3>the correct answer is: {questions[this.state.questionIndex].correctAnswer} </h3>
+                        <h2>{this.state.answerCorrect ? "Correct" : "Incorrect"}</h2>
+                        <h3>The correct answer is: {questions[this.state.questionIndex].correctAnswer} </h3>
                         <img src={questions[this.state.questionIndex].image}/>
                     </div>
                 }

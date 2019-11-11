@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Start from "./components/states/Start"
 import Game from "./components/states/Game"
 import End from "./components/states/End"
+import "./style.css"
 
 const style = {
     main: {
@@ -16,16 +17,18 @@ const style = {
 
     },
     panel: {
-        backgroundColor: "white",
         height: "100%",
         width: "960px",
         display: "flex",
         flexDirection: "column",
-        alignItems: "center"
+        alignItems: "center",
+        fontFamily: "@font-face"
 
     },
     title: {
-        textAlign: "center"
+        textAlign: "center",
+        fontSize: "75px",
+        paddingBottom: "15px"
     }
 }
 
@@ -66,7 +69,7 @@ class TrivaGame extends React.Component {
         return(
         <div style={style.main}>
             <div style={style.panel}>
-                <h1 style={style.title}>Space</h1>
+                <h1 style={style.title}>Space Trivia</h1>
                 {gamesStates[this.state.gameStateIndex]}
             </div>
         </div>
