@@ -2,23 +2,23 @@
     cursor: pointer;
     background: #fff;
     border-radius: 10px;
-    height: 200px;
-    margin: 35px;
+    height: 150px;
+    margin: 10px;
+    margin-top: 4rem;
     position: relative;
-    width: 200px;
-    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+    width: 150px;
+    box-shadow: 0 3px 6px black, 0 3px 6px black;
 }
   
 .card > .img-container {
     height: 100%;
-    margin: auto;
+    overflow: hidden;
 }
 
 .card > .img-container > img {
     width: 100%;
-    margin-top: 16px;
 }
 
 .card:hover {
-    box-shadow: 0 10px 13px #999, 0 10px 13px #999;
+    box-shadow: 0 10px 13px black, 0 10px 13px black;
 }

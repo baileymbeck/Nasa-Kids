@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 import TriviaGame from "./components/TriviaGame";
+import ClickyGame from "./components/ClickyGame";
 import Nav from "./components/Nav";
 import Home from "./pages/Home/Home";
 import GameHome from "./pages/GameHome/GameHome"
@@ -24,7 +25,7 @@ function App() {
             <Route exact path="/gamehome" component={GameHome} />
             {/* <Route exact path="/login" component={} /> */}
             {/* <Route exact path="/profile" component={} /> */}
-            {/* <Route exact path="/clickygame" component={Clicky Game} /> */}
+            <Route exact path="/clickygame" component={ClickyGame} />
           <Route exact path="/trivia" component={TriviaGame} />
           </Switch>
         {/* <Footer/> */}
