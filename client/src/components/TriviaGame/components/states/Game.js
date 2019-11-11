@@ -5,7 +5,7 @@ const questions = [{
     question: "What was the first full length CGI movie?",
     answers: ["A Bug's Life", "Monsters Inc.", "Toy Story", "The Lion King"],
     correctAnswer: "Toy Story",
-    image: "assets/images/toystory.gif"
+    image: "https://media.giphy.com/media/RpfIXomvjCh8I/giphy.gif"
 }, {
     question: "Which of these is NOT a name of one of the Spice Girls?",
     answers: ["Sporty Spice", "Fred Spice", "Scary Spice", "Posh Spice"],
@@ -44,27 +44,56 @@ const questions = [{
 }];
 
 
-const timer = 30;
+const timerDuration = 30;
 
 export default class Game extends React.Component {
     state = {
         correct: 0,
         incorrect: 0,
         questionIndex: 0,
-        timer
+        timer: timerDuration,
+        displayQuestion: true,
+        answerCorrect: true
     };
 
-    answerQuestion = (correct) => {
-        const key = correct ? "correct" : "incorrect"
-        const newState = { ...this.state, [key]: this.state[key] + 1 }
-        if (this.state.questionIndex < questions.length - 1) {
-            this.setState({
-                ...newState,
-                questionIndex: this.state.questionIndex + 1,
-            })
+    componentDidMount() {
+        this.timerID = setInterval(
+            () => this.tick(),
+            1000
+        );
+    }
+    componentWillUnmount() {
+        console.log("dfha;sdj")
+        clearInterval(this.timerID);
+    }
+
+    tick() {
+        if (this.state.timer === 0) {
+            this.answerQuestion(false);
         } else {
-            this.props.setScore(newState.correct, newState.incorrect)
+            this.setState({ ...this.state, timer: this.state.timer - 1 })
         }
+    }
+
+    answerQuestion = (correct) => {
+        this.setState(() => ({
+            displayQuestion: false, 
+            timer: 30,
+            answerCorrect: correct
+        }))
+        setTimeout(() => {
+            const key = correct ? "correct" : "incorrect"
+            const newState = { ...this.state, [key]: this.state[key] + 1, timer: timerDuration, displayQuestion: true }
+            if (this.state.questionIndex < questions.length - 1) {
+                this.setState({
+                    ...newState,
+                    questionIndex: this.state.questionIndex + 1,
+                })
+            } else {
+                this.props.setScore(newState.correct, newState.incorrect)
+            }
+        }, 5000)
+
     }
 
     //function to render question to the page
@@ -73,27 +102,38 @@ export default class Game extends React.Component {
         const correctAnswer = questions[this.state.questionIndex].correctAnswer
         if (userAnswer === correctAnswer) {
             this.answerQuestion(true)
-        }else {
+        } else {
             this.answerQuestion(false)
-        }        
-    }
-
-    //Countdown function
-    countdown = () => {
+        }
 
     }
-   
+
+
+
 
 
     render() {
         return (
             <div>
-                <h2>Time Remaining: {this.state.time}</h2>
-                <h2>{questions[this.state.questionIndex].question}</h2>
-                <div>{questions[this.state.questionIndex].answers.map((answer, index) => {
-                    return (<h3 onClick={() => this.handleQuestion(answer)} key={index} >{answer}</h3>)
-                })}</div>
+                {this.state.displayQuestion ?
+                    <div>
+                        <h2>Time Remaining: {this.state.timer}</h2>
+                        <h2>{questions[this.state.questionIndex].question}</h2>
+                        <div>{questions[this.state.questionIndex].answers.map((answer, index) => {
+                            return (<h3 onClick={() => this.handleQuestion(answer)} key={index} >{answer}</h3>)
+
+                        })}
+                        </div>
+                    </div>
+                    :
+                    <div>
+
+                        <h2>{this.state.answerCorrect ? "Correct" : "Wrong"}</h2>
+                        <h3>the correct answer is: {questions[this.state.questionIndex].correctAnswer} </h3>
+                        <img src={questions[this.state.questionIndex].image}/>
+                    </div>
+                }
             </div>
-        ) 
+        )
     }
 }
