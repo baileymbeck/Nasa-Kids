@@ -13,21 +13,21 @@ const questions = [{
     image: "https://media.giphy.com/media/l0MYIKGlXPrn0Z4uQ/giphy.gif"
 }, {
     question: "What is the most common type of star found in the milky way?",
-    answers: ["New York Knicks", "Portland Trailblazers", "Los Angeles Lakers", "Red supergiant stars"],
-    correctAnswer: "Chicago Bulls",
-    image: "assets/images/bulls.gif"
+    answers: ["Red giant star", "Neutron stars", "Supergiant stars", "Red dwarf stars"],
+    correctAnswer: "Red dwarf stars",
+    image: "https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif"
 }, {
-    question: "Which group released the hit song, 'Smells Like Teen Spirit'?",
-    answers: ["Nirvana", "Backstreet Boys", "The Offspring", "No Doubt"],
-    correctAnswer: "Nirvana",
-    image: "assets/images/nirvanabark.gif"
+    question: "What has a gravitational pull so strong that even light cannot escape it?",
+    answers: ["Black hole", "The Moon", "Supernova", "The Sun"],
+    correctAnswer: "A black hole",
+    image: "https://media.giphy.com/media/LtWIXcIgXsGiI/giphy.gif"
 }, {
-    question: "Which popular Disney movie featured the song, \"Circle of Life\"?",
-    answers: ["Aladdin", "Hercules", "Mulan", "The Lion King"],
-    correctAnswer: "The Lion King",
-    image: "assets/images/lionking.gif"
+    question: "Earth is located in which galaxy?",
+    answers: ["Milky Way Galaxy", "Whirlpool Galaxy", "Andromeda Galaxy", "Pinwheel Galaxy"],
+    correctAnswer: "Milky Way Galaxy",
+    image: "https://media.giphy.com/media/YNk9HRcH9zJfi/giphy.gif"
 }, {
-    question: "Finish this line from the Fresh Prince of Bel-Air theme song: \"I whistled for a cab and when it came near, the license plate said...\"",
+    question: "Who was the first person to walk on the moon?",
     answers: ["Dice", "Mirror", "Fresh", "Cab"],
     correctAnswer: "Fresh",
     image: "assets/images/fresh.gif"
