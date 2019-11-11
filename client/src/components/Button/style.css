@@ -4,7 +4,7 @@
 }
 
 .text {
-    padding: 35px 0;
+    padding: 40px 0;
     font-family: "./Smile-ICG-Medium.ttf";
     color: black;
     font-size: 45px;
@@ -43,7 +43,7 @@
 }
 
 .card > .img-container > img {
-    width: 100%;
+    height: 100%;
     justify-content: center;
 }
 

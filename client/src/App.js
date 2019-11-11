@@ -26,7 +26,7 @@ function App() {
             {/* <Route exact path="/login" component={} /> */}
             {/* <Route exact path="/profile" component={} /> */}
             <Route exact path="/clickygame" component={ClickyGame} />
-          <Route exact path="/trivia" component={TriviaGame} />
+            <Route exact path="/trivia" component={TriviaGame} />
           </Switch>
         {/* <Footer/> */}
       </div>
