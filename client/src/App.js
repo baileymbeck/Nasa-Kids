@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 import TriviaGame from "./components/TriviaGame";
 import Nav from "./components/Nav";
-import Home from "./pages/Home/Home";
+import Home from "./pages/Home/Home"
 
 const style = {
   app: {
