@@ -5,6 +5,9 @@ import ImgOfDay from "./imageofday.jpg";
 import Button from "../../components/Button"
 import Rocket from "./rocket.png";
 import { Link } from "react-router-dom";
+import Reading from "./reading.png";
+import Game from "./game.png";
+import SpaceCollage from "./spacecollage.gif"
 
 class Home extends Component {
     state={}
@@ -28,17 +31,17 @@ class Home extends Component {
                     </Col>
                     <Col size="md-3">
                         <Link to="/gamehome">
-                            <Button text="Games"></Button>
+                            <Button text="Games" image={Game}></Button>
                         </Link>
                     </Col>
                     <Col size="md-3">
                         <Link to="/collpics">
-                            <Button text="Cool Pictures"></Button>
+                            <Button text="Cool Pictures" image={SpaceCollage}></Button>
                         </Link>
                     </Col>
                     <Col size="md-3">
                         <Link to="/glossary">
-                            <Button text="Glossary"></Button>
+                            <Button text="Glossary" image={Reading}></Button>
                         </Link>
                     </Col>
                 </Row>
