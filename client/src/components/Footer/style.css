@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "./21592_Kidprint.ttf";
+    src: url("./21592_Kidprint.ttf");
+}
+
+.footer {
+    height: 100px;
+    color: white;
+    overflow: auto;
+    font-family: "./21592_Kidprint.ttf";
+    font-size: 45px;
+    text-align: center;
+}
+  
+.footer > .bottom {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    background: rgb(11, 61, 145);
+    padding: 8px;
+    font-family: "./21592_Kidprint.ttf";
+    font-size: 45px;
+    text-align: center;
+    color: white;
+}
