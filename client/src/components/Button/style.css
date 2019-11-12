@@ -6,6 +6,7 @@
 .text {
     padding: 40px 0;
     font-family: "./Smile-ICG-Medium.ttf";
+    font-weight: 600;
     color: black;
     text-shadow: 0 3px 6px rgb(247, 240, 204);
     font-size: 45px;
