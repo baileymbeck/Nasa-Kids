@@ -1,7 +1,8 @@
 /* eslint-disable react/react-in-jsx-scope */
 import React, { Component } from 'react';
+import "./signup.css"
 
-function SignInForm({ userName, email, password, handleInputChange, handleFormSubmit }) {
+function SignUpForm({ userName, email, password, handleInputChange, handleFormSubmit }) {
 
     return (
         <form className="signUpContainer">
@@ -41,4 +42,4 @@ function SignInForm({ userName, email, password, handleInputChange, handleFormSu
     )
 };
 
-export default SignInForm;
+export default SignUpForm;

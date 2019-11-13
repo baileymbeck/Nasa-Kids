@@ -1,11 +1,9 @@
 /* eslint-disable react/react-in-jsx-scope */
 import React, { Component } from 'react';
-import Form from "../Form/Form";
-// import SignInForm from "../Form/SignInForm";
+import SignUpForm from "../Form/SignUpForm";
 import API from "../../utils/API";
-import "./login.css";
 
-class LoginPage extends Component {
+class SignUpPage extends Component {
   state = {
     userName: "",
     password: "",
@@ -19,20 +17,20 @@ class LoginPage extends Component {
     });
   };
 
-  getUsers = () => {
-    API.getUsers(this.state.q)
-      .then(res =>
-        this.setState({
-          users: res.data
-        })
-      )
-      .catch(() =>
-        this.setState({
-          users: [],
-          message: "No New Users Found, Try a Different Query"
-        })
-      );
-  };
+  // getUsers = () => {
+  //   API.getUsers(this.state.q)
+  //     .then(res =>
+  //       this.setState({
+  //         users: res.data
+  //       })
+  //     )
+  //     .catch(() =>
+  //       this.setState({
+  //         users: [],
+  //         message: "No New Users Found, Try a Different Query"
+  //       })
+  //     );
+  // };
 
   handleFormSubmit = event => {
     event.preventDefault();
@@ -51,14 +49,12 @@ class LoginPage extends Component {
 
   render() {
     return (
-      <div>
-        <Form
-          handleInputChange={this.handleInputChange}
-          handleFormSubmit={this.handleFormSubmit}
-        />
-      </div>
+        <SignUpForm
+        handleInputChange={this.handleInputChange}
+        handleFormSubmit={this.handleFormSubmit}
+      />
     )
   }
 };
 
-export default LoginPage
+export default SignUpPage

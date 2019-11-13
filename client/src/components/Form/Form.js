@@ -1,5 +1,6 @@
 /* eslint-disable react/react-in-jsx-scope */
 import React, { Component } from 'react';
+import "./form.css"
 
 function Form({ userName, email, password, handleInputChange, handleFormSubmit }) {
 
