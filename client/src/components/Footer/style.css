@@ -4,23 +4,15 @@
 }
 
 .footer {
-    height: 100px;
-    color: white;
-    overflow: auto;
-    font-family: "./21592_Kidprint.ttf";
-    font-size: 45px;
-    text-align: center;
-}
-  
-.footer > .bottom {
     position: absolute;
     bottom: 0px;
     left: 0;
     right: 0;
     background: rgb(11, 61, 145);
-    padding: 8px;
+    padding: 15px;
+    height: 100px;
+    color: white;
     font-family: "./21592_Kidprint.ttf";
     font-size: 45px;
     text-align: center;
-    color: white;
 }

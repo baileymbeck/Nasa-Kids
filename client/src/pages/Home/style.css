@@ -3,6 +3,10 @@
     src: url("./Smile-ICG-Medium.ttf");
 }
 
+body {
+    overflow: hidden;
+}
+
 h1 {
     font-family: "./Smile-ICG-Medium.ttf";
 }
