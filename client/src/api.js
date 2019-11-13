@@ -9,5 +9,15 @@ export default {
     getScores: function () {
         return axios.get("/api/score");
     },
+    getScoresByGame: function(game) {
+        return axios.get("/api/score" , {
+            params: { game: game }
+        })
+    },
+    getScoresByUserId: function(userId) {
+        return axios.get("/api/score" , {
+            params: {userId}
+        })
+    }
   
 }

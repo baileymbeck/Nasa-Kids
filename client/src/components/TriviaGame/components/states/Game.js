@@ -91,7 +91,7 @@ export default class Game extends React.Component {
             } else {
                 this.props.setScore(newState.correct, newState.incorrect)
             }
-        }, 5000)
+        }, 2000)
 
     }
 
