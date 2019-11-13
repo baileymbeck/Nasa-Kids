@@ -1,12 +1,13 @@
 /* eslint-disable react/react-in-jsx-scope */
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import "./form.css"
 
 function Form({ userName, email, password, handleInputChange, handleFormSubmit }) {
 
     return (
         <form className="loginContainer">
-            <div>
+            <div className="form-size">
                 <label htmlFor="Query">Login</label>
                 <br />
                 <input
@@ -29,8 +30,11 @@ function Form({ userName, email, password, handleInputChange, handleFormSubmit }
                     type="submit"
                     onClick={handleFormSubmit}
                 >
-                    Submit Book
+                    Login
                     </button>
+                <Link to="/signup">
+                    <button className="signup">Signup</button>
+                </Link>
             </div>
         </form>
     )
