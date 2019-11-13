@@ -12,9 +12,9 @@ import Wrapper from "./components/Wrapper"
 
 const style = {
   app: {
-    height: '100vh',
-    display: 'flex',
-    flexDirection: 'column'
+    // height: '100vh',
+    // display: 'flex',
+    // flexDirection: 'column'
   }
 }
 

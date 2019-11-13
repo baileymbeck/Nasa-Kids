@@ -11,11 +11,7 @@ const style = {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        paddingTop: "30px",
         paddingBottom: "30px",
-        marginTop: "125px"
-
-
     },
     panel: {
         height: "100%",
@@ -23,13 +19,13 @@ const style = {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        fontFamily: "@font-face"
+        fontFamily: "./Smile-ICG-Medium.ttf",
 
     },
     title: {
         textAlign: "center",
         fontSize: "75px",
-        paddingBottom: "15px"
+        paddingBottom: "15px",
     }
 }
 

@@ -9,10 +9,11 @@
     left: 0;
     right: 0;
     background: rgb(11, 61, 145);
-    padding: 15px;
-    height: 100px;
+    padding: 5px;
+    height: 75px;
     color: white;
     font-family: "./21592_Kidprint.ttf";
     font-size: 45px;
     text-align: center;
+    clear: both;
 }

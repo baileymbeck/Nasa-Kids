@@ -3,15 +3,11 @@
     src: url("./Smile-ICG-Medium.ttf");
 }
 
-body {
-    overflow: hidden;
-}
-
 h1 {
     font-family: "./Smile-ICG-Medium.ttf";
 }
 
 .imageofday {
     height: 200px;
-    margin: 125px auto 10px;
+    margin: 10px auto;
 }
