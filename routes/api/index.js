@@ -4,9 +4,9 @@ const userRoutes = require("./user");
 const scoreRoutes = require("./score");
 const logInRoutes = require("./login");
 
-// router.use("/login", logInRoutes);
+router.use("/login", logInRoutes);
 router.use("/user", userRoutes);
-// router.use("/score", scoreRoutes);
+router.use("/score", scoreRoutes);
 
 // render the html page
 router.use(function(req, res){
