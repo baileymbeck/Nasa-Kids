@@ -8,6 +8,7 @@ const style = {
         fontSize: "50px"
     },
     button: {
+        marginTop: "20px",
         boxShadow: "0 3px 6px black, 0 3px 6px black"
     }
 }
@@ -22,8 +23,6 @@ function End({nextState, correct, incorrect}) {
             </div>
             <button style={style.button} onClick={nextState}>Restart Game</button>
         </div>
-
-
 
     )
 }
