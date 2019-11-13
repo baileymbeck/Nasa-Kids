@@ -6,7 +6,8 @@ import ClickyGame from "./components/ClickyGame";
 import Nav from "./components/Nav";
 import Home from "./pages/Home/Home";
 import LoginPage from './components/Login/Login';
-import GameHome from "./pages/GameHome/GameHome"
+import GameHome from "./pages/GameHome/GameHome";
+import Footer from "./components/Footer"
 
 const style = {
   app: {
@@ -36,9 +37,9 @@ class App extends Component {
             <Route exact path="/login" component={LoginPage} />
             {/* <Route exact path="/profile" component={} /> */}
             <Route exact path="/clickygame" component={ClickyGame} />
-          <Route exact path="/trivia" component={TriviaGame} />
+            <Route exact path="/trivia" component={TriviaGame} />
           </Switch>
-        {/* <Footer/> */}
+        <Footer/>
       </div>
     </Router>
   );
