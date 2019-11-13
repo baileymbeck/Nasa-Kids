@@ -2,12 +2,17 @@ import React from "react";
 
 const style = {
     scores: {
-        fontSize: "30px"
+        fontSize: "30px",
+        fontWeight: "bolder"
     },
     title: {
-        fontSize: "50px"
+        fontSize: "50px",
+        fontWeight: "bolder"
+
     },
     button: {
+        fontWeight: "bolder",
+        letterSpacing: "2px",
         marginTop: "20px",
         boxShadow: "0 3px 6px black, 0 3px 6px black"
     }

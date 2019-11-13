@@ -21,6 +21,7 @@ function Form({ userName, email, password, handleInputChange, handleFormSubmit }
                     onChange={handleInputChange}
                     name="password"
                     placeholder="Password"
+                    type="password"
                 />
                 < br />
                 <button
