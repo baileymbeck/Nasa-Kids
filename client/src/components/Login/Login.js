@@ -1,58 +1,62 @@
 /* eslint-disable react/react-in-jsx-scope */
-import React, {Component} from 'react';
-import { Input, TextArea, FormBtn } from "../../components/Form";
-import { Col, Row, Container } from "../../components/Grid";
+import React, { Component } from 'react';
+import Form from "../Form/Form";
+// import SignInForm from "../Form/SignInForm";
+import API from "../../utils/API";
 import "./login.css";
-
-// import axios from 'axios';
-// install axios in both package.json
-
-// import ReactSignupLoginComponent from 'react-signup-login-component';
 
 class LoginPage extends Component {
   state = {
-    user: "",
+    userName: "",
     password: "",
     email: ""
   }
-// axios.post(/)
+  
+  handleInputChange = event => {
+    const { name, value } = event.target;
+    this.setState({
+      [name]: value
+    });
+  };
+
+  getUsers = () => {
+    API.getUsers(this.state.q)
+      .then(res =>
+        this.setState({
+          users: res.data
+        })
+      )
+      .catch(() =>
+        this.setState({
+          users: [],
+          message: "No New Users Found, Try a Different Query"
+        })
+      );
+  };
+
+  handleFormSubmit = event => {
+    event.preventDefault();
+    this.getUsers();
+  };
+
+  handleUserSave = id => {
+    const user = this.state.users.find(user => user.id === id);
+
+    API.saveUser({
+      user: "",
+      email: "",
+      password: ""
+    }).then(() => this.getUsers());
+  };
 
   render() {
     return (
-      <Container fluid>
-        <Row>
-          <Col size="md-6">
-          <form className="formContainer">
-              <Input
-                value={this.state.user}
-                onChange={this.handleInputChange}
-                name="user"
-                placeholder="Username (required)"
-              />
-              <Input
-                value={this.state.email}
-                onChange={this.handleInputChange}
-                name="email"
-                placeholder="Email (required)"
-              />
-               <Input
-                value={this.state.password}
-                onChange={this.handleInputChange}
-                name="password"
-                placeholder="Password (required)"
-              />
-              <FormBtn
-                disabled={!(this.state.user && this.state.email && this.state.password)}
-                onClick={this.handleFormSubmit}
-              >
-                Submit Book
-              </FormBtn>
-            </form>
-          </Col>
-        </Row>
-      </Container>    
-      )
-    }
+      <Form
+        handleInputChange={this.handleInputChange}
+        handleFormSubmit={this.handleFormSubmit}
+      />
+    )
+  }
 };
 
 export default LoginPage
