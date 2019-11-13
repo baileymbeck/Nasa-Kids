@@ -63,7 +63,6 @@ export default class Game extends React.Component {
         );
     }
     componentWillUnmount() {
-        console.log("dfha;sdj")
         clearInterval(this.timerID);
     }
 

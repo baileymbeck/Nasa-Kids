@@ -1,18 +1,16 @@
 const router = require("express").Router();
-const userController = require("../../controllers/userController");
+const scoreController = require("../../controllers/scoreController");
 
 // Matches with "/api/score"
 router.route("/")
-  .get(userController.findAll) //find all entries 
-  .post(userController.create);  //creating a new game entry object to post to DB
+  .get(scoreController.findAll) //find all entries 
+  .post(scoreController.create);  //creating a new game entry object to post to DB
 
 
 // Matches with "/api/score/:id"
 router
   .route("/:id")
-  .get(userController.findById)
-  .put(userController.update)
-  .delete(userController.remove);
+  .get(scoreController.findById)
 
 
 

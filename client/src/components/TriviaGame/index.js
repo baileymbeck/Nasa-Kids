@@ -56,7 +56,10 @@ class TrivaGame extends React.Component {
     setScore = (correct, incorrect) => {
         const newState = { ...this.state, correct, incorrect, gameStateIndex: this.state.gameStateIndex + 1 }
         this.setState(newState)
+        
     }
+
+
 
     //if key='incorrect'; state["incorrect"]  === state.incorrect === state[key]
 
