@@ -1,0 +1,31 @@
+.loginContainer{
+    margin: 15px auto;
+    width: 40%;
+}
+
+button {
+    padding: 0 50px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+input {
+    padding-left: 10px;
+    margin: 5px auto;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+}
+
+.signup {
+    float: right;
+}
+
+label {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.form-size {
+    width: auto;
+}

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import ImageCard from "./components/ImageCard"; 
-import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import cards from "./cards.json";
 import "./style.css";
@@ -88,10 +87,9 @@ class App extends Component {
 
   render() {
     return (
-      <div className="row">
+      <div className="row-game">
       <Title score={this.state.score} highscore={this.state.highscore} rightWrong={this.state.rightWrong}></Title>
-      <Wrapper className="card-wrapper">
-        {this.state.cards.map(card => (
+        <div className="layout">{this.state.cards.map(card => (
           <ImageCard 
             id={card.id}
             key={card.id}
@@ -101,8 +99,8 @@ class App extends Component {
             handleReset={this.handleReset}
             handleShuffle={this.handleShuffle}
           />
-        ))}
-      </Wrapper>
+          ))}
+        </div>
       </div>
     );
   }
