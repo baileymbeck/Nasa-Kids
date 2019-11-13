@@ -1,0 +1,15 @@
+.wrapper {
+    padding-top: 50px;
+    background: url("./Moon-background.jpg");
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    overflow: auto;
+    clear: both;
+    margin-left: 50vh;
+    padding: 0;
+}
+  

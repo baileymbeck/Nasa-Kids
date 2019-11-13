@@ -1,12 +1,13 @@
 /* eslint-disable react/react-in-jsx-scope */
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import "./signup.css"
 
 function SignUpForm({ userName, email, password, handleInputChange, handleFormSubmit }) {
 
     return (
         <form className="signUpContainer">
-            <div>
+            <div className="signup-size">
                 <label htmlFor="Query">Sign Up</label>
                 <br />
                 <input
@@ -28,6 +29,7 @@ function SignUpForm({ userName, email, password, handleInputChange, handleFormSu
                     onChange={handleInputChange}
                     name="password"
                     placeholder="Password"
+                    type="password"
                 />
                 < br />
                 <button
@@ -35,8 +37,11 @@ function SignUpForm({ userName, email, password, handleInputChange, handleFormSu
                     type="submit"
                     onClick={handleFormSubmit}
                 >
-                    Submit Book
+                    Signup
                     </button>
+                <Link to="/login">
+                    <button className="login">Login</button>
+                </Link>
             </div>
         </form>
     )

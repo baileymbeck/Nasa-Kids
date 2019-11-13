@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 import Logo from "./NASA.png";
-import Settings from "./settings.png";
+import Homeimg from "./home.png";
 import Font1 from "./21592_Kidprint.ttf";
 
 class Nav extends Component {
@@ -33,7 +33,7 @@ class Nav extends Component {
     return (
       <nav className="navbar fixed-top navbar-dark">
         <Link className="navbar-brand" to="/">
-            <img className="settings" src={Settings} />
+            <img className="settings" src={Homeimg} />
         </Link>
         <div className="title" style={{fontFamily: {Font1}}}>WELCOME Camila</div>
         <div>
