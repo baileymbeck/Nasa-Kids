@@ -3,6 +3,7 @@ import Start from "./components/states/Start"
 import Game from "./components/states/Game"
 import End from "./components/states/End"
 import "./style.css"
+import api from "../../api";
 
 const style = {
     main: {
@@ -10,11 +11,7 @@ const style = {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        paddingTop: "30px",
         paddingBottom: "30px",
-        marginTop: "125px"
-
-
     },
     panel: {
         height: "100%",
@@ -22,13 +19,13 @@ const style = {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        fontFamily: "@font-face"
+        fontFamily: "./Smile-ICG-Medium.ttf",
 
     },
     title: {
         textAlign: "center",
         fontSize: "75px",
-        paddingBottom: "15px"
+        paddingBottom: "15px",
     }
 }
 
@@ -56,7 +53,18 @@ class TrivaGame extends React.Component {
     setScore = (correct, incorrect) => {
         const newState = { ...this.state, correct, incorrect, gameStateIndex: this.state.gameStateIndex + 1 }
         this.setState(newState)
+        api.saveScore({
+            game: "trivia",
+            score: {
+                correct,
+                incorrect
+            },
+            userId: "kristen"   
+          
+        })  //passing saveScore an object: {correct: correct, incorrect: incorrect}
     }
+
+
 
     //if key='incorrect'; state["incorrect"]  === state.incorrect === state[key]
 

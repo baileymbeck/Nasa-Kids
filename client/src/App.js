@@ -8,14 +8,17 @@ import EarthClicky from "./components/EarthClicky";
 import Nav from "./components/Nav";
 import Home from "./pages/Home/Home";
 import LoginPage from './components/Login/Login';
+import SignUpPage from './components/SignUp/SignUp';
 import GameHome from "./pages/GameHome/GameHome";
-import Footer from "./components/Footer"
+import Footer from "./components/Footer";
+import Wrapper from "./components/Wrapper"
+import NoMatch from './pages/NoMatch';
 
 const style = {
   app: {
-    height: '100vh',
-    display: 'flex',
-    flexDirection: 'column'
+    // height: '100vh',
+    // display: 'flex',
+    // flexDirection: 'column'
   }
 }
 
@@ -33,14 +36,18 @@ class App extends Component {
       <Router>
       <div style={style.app}>
         <Nav/>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/gamehome" component={GameHome} />
-            <Route exact path="/login" component={LoginPage} />
-            {/* <Route exact path="/profile" component={} /> */}
-            <Route exact path="/clickygame" component={ClickyGame} />
-            <Route exact path="/trivia" component={TriviaGame} />
-          </Switch>
+          <Wrapper>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/gamehome" component={GameHome} />
+              <Route exact path="/login" component={LoginPage} />
+              <Route exact path="/signup" component={SignUpPage} />
+              {/* <Route exact path="/profile" component={} /> */}
+              <Route exact path="/clickygame" component={ClickyGame} />
+              <Route exact path="/trivia" component={TriviaGame} />
+              <Route component={NoMatch} />
+            </Switch>
+          </Wrapper>
         <Footer/>
       </div>
     </Router>
