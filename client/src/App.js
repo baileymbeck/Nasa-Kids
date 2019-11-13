@@ -8,7 +8,9 @@ import Home from "./pages/Home/Home";
 import LoginPage from './components/Login/Login';
 import SignUpPage from './components/SignUp/SignUp';
 import GameHome from "./pages/GameHome/GameHome";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer"
+import HighScore from "./components/HighScore"
+
 import Wrapper from "./components/Wrapper"
 import NoMatch from './pages/NoMatch';
 
@@ -40,6 +42,7 @@ class App extends Component {
               <Route exact path="/gamehome" component={GameHome} />
               <Route exact path="/login" component={LoginPage} />
               <Route exact path="/signup" component={SignUpPage} />
+              <Route exact path="/highscore" component={HighScore} />
               {/* <Route exact path="/profile" component={} /> */}
               <Route exact path="/clickygame" component={ClickyGame} />
               <Route exact path="/trivia" component={TriviaGame} />
