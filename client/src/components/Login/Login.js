@@ -51,12 +51,10 @@ class LoginPage extends Component {
 
   render() {
     return (
-      <div>
         <Form
           handleInputChange={this.handleInputChange}
           handleFormSubmit={this.handleFormSubmit}
         />
-      </div>
     )
   }
 };
