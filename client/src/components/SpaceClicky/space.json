@@ -1,42 +1,42 @@
 [
     {
         "id": 1,
-        "image": "/img/planets-easy/img1.png",
+        "image": "/img/space-medium/space1.jpg",
         "clicked": false
     },
     {
         "id": 2,
-        "image": "/img/planets-easy/img2.png",
+        "image": "/img/space-medium/space2.jpg",
         "clicked": false
     },
     {
         "id": 3,
-        "image": "/img/planets-easy/img3.png",
+        "image": "/img/space-medium/space3.jpg",
         "clicked": false
     },
     {
         "id": 4,
-        "image": "/img/planets-easy/img4.png",
+        "image": "/img/space-medium/space4.jpg",
         "clicked": false
     },
     {
         "id": 5,
-        "image": "/img/planets-easy/img5.png",
+        "image": "/img/space-medium/space5.jpg",
         "clicked": false
     },
     {
         "id": 6,
-        "image": "/img/planets-easy/img6.png",
+        "image": "/img/space-medium/space6.jpg",
         "clicked": false
     },
     {
         "id": 7,
-        "image": "/img/planets-easy/img7.png",
+        "image": "/img/space-medium/space7.jpg",
         "clicked": false
     },
     {
         "id": 8,
-        "image": "/img/planets-easy/img8.png",
+        "image": "/img/space-medium/space8.jpg",
         "clicked": false
     }
 ]
