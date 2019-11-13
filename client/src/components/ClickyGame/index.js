@@ -4,6 +4,7 @@ import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import cards from "./cards.json";
 import "./style.css";
+import api from "../../api";
 
 class App extends Component {
 
@@ -53,18 +54,32 @@ class App extends Component {
       this.setState({ rightWrong: "You win!" });
     }
     this.handleShuffle();
+  
   };
 
   handleReset = () => {
     this.setState({
       score: 0,
-      highscore: this.state.highscore,
+      // highscore: this.state.highscore,
       rightWrong: "Try again!",
       clicked: []
     });
+
     this.handleShuffle();
-    
+    //var correct = highscore
+    //console.log(correct)
+    this.saveScore();
   };
+
+  saveScore = (correct) =>{
+    api.saveScore({
+      game: "clicky",
+      score: this.state.highscore,
+      userId: "kristen"
+    })
+  }
+
+
 
   handleShuffle = () => {
     let shuffledCards = this.shuffleArray(cards);

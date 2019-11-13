@@ -5,7 +5,7 @@ export default {
     saveScore: function (scoreData) {
         return axios.post("/api/score", scoreData);
     },
-    // Gets all saved books
+    // Gets all saved scores
     getScores: function () {
         return axios.get("/api/score");
     },
