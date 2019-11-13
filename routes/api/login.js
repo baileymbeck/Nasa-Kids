@@ -3,10 +3,10 @@ const userController = require("../../controllers/userController");
 
 // Matches with "/api/login"
 router.route("/")
-  .get(userController.findAll)
+  //.get(userController.findAll)
   .post(userController.create);
 
-// Matches with "/api/books/:id"
+// Matches with "/api/login/:id"
 router
   .route("/:id")
   .get(userController.findById)
