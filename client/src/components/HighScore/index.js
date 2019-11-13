@@ -38,11 +38,11 @@ s
                 <h1 style={style.score}>HighScore</h1>
                 <div>
                     {this.state.scores.map(data =>
-                        <li key={data._id}>
-                            THis is the score: {data.game}
-                            {data.score && data.score.correct || 0} - 
-                            {data.score && data.score.incorrect || 0}
-                        </li>
+                        <ul key={data._id}>
+                            <ul>{data.game}</ul> 
+                            <ul>Correct:{data.score && data.score.correct || 0}</ul>
+                            <ul>Incorrect:{data.score && data.score.incorrect || 0}</ul>
+                         </ul>
                     )}
                 </div>
             </div>
