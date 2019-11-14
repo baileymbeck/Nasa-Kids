@@ -3,6 +3,7 @@ import ImageCard from "./components/ImageCard";
 import Title from "./components/Title";
 import cards from "./earth.json";
 import "./style.css";
+import api from "../../api";
 
 class App extends Component {
 
@@ -62,8 +63,18 @@ class App extends Component {
       clicked: []
     });
     this.handleShuffle();
+    this.saveScore();
     
   };
+
+
+  saveScore = (correct) => {
+    api.saveScore({
+      game: "clicky",
+      score: this.state.highscore,
+      userId: "kristen"
+    })
+  }
 
   handleShuffle = () => {
     let shuffledCards = this.shuffleArray(cards);
