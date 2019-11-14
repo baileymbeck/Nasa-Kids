@@ -12,7 +12,7 @@ import SignUpPage from './components/SignUp/SignUp';
 import GameHome from "./pages/GameHome/GameHome";
 import Footer from "./components/Footer"
 import HighScore from "./components/HighScore"
-
+import Glossary from "./pages/Glossary/Glossary"
 import Wrapper from "./components/Wrapper"
 import NoMatch from './pages/NoMatch';
 import ClickyHome from './pages/ClickyHome/ClickyHome';
@@ -52,6 +52,7 @@ class App extends Component {
               <Route exact path="/spaceshuffle" component={SpaceClicky} />
               <Route exact path="/earthshuffle" component={EarthClicky} />
               <Route exact path="/trivia" component={TriviaGame} />
+              <Route exact path="/glossary" component={Glossary} />
               <Route component={NoMatch} />
             </Switch>
           </Wrapper>
