@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "./Smile-ICG-Medium.ttf";
+    src: url("./Smile-ICG-Medium.ttf");
+}
+
+title {
+    font-family: "./Smile-ICG-Medium.ttf";
+}
+
+.layout {
+    width: 55%;
+    margin: auto;
+}
+
+.row-game {
+    width: 100%;
+}

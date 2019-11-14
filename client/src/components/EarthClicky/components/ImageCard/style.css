@@ -1,0 +1,39 @@
+.card-game {
+    cursor: pointer;
+    background: rgb(247, 240, 204);
+    border-radius: 10px;
+    height: 150px;
+    margin: 20px;
+    position: relative;
+    width: 150px;
+    box-shadow: 0 3px 6px black, 0 3px 6px black;
+    float: left;
+    padding: 0px;
+    overflow: hidden;
+}
+  
+.card-game > .img-container {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card-game > .txt-container {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+}
+
+.card-game > .img-container > img {
+    height: 155px;
+    width: 155px;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card-game:hover {
+    box-shadow: 0 10px 13px black, 0 10px 13px black;
+}

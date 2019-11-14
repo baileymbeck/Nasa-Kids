@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "./Smile-ICG-Medium.ttf";
+    src: url("./Smile-ICG-Medium.ttf");
+}
+
+h1 {
+    font-family: "./Smile-ICG-Medium.ttf";
+    font-size: 75px;
+}
+
+.top {
+    margin: 0 auto 10px;
+}
+
+.col-md-4{
+    padding-left: 80px;
+}

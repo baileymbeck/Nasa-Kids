@@ -1,0 +1,30 @@
+.header {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background: url("./Stars-background.jpg");
+    background-repeat: repeat;
+    font-weight: bolder;
+    padding: 20px;
+    font-family: "./Smile-ICG-Medium.ttf";
+    letter-spacing: 3px;
+}
+
+.planet-title {
+    float: left;
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+.instructions {
+    font-size: 35px;
+    text-align: center;
+}
+
+.scores {
+    float: right;
+    font-size: 35px;
+    margin-left: 10px;
+}
