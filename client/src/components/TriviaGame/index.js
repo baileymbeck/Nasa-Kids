@@ -54,7 +54,7 @@ class TrivaGame extends React.Component {
         const newState = { ...this.state, correct, incorrect, gameStateIndex: this.state.gameStateIndex + 1 }
         this.setState(newState)
         api.saveScore({
-            game: "trivia",
+            game: "Trivia",
             score: {
                 correct,
                 incorrect
