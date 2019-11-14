@@ -4,6 +4,13 @@ import api from "../../api";
 const style = {
     score: {
         marginTop: "125px"
+    },
+    body: {
+        overflow: "auto"
+    },
+    game: {
+        fontSize: "40px",
+        fontWeight: "bold"
     }
 }
 
@@ -36,10 +43,10 @@ s
         return (
             <div>
                 <h1 style={style.score}>HighScore</h1>
-                <div>
+                <div style={style.body}>
                     {this.state.scores.map(data =>
                         <ul key={data._id}>
-                            <ul>{data.game}</ul> 
+                            <ul style={style.game}>{data.game}</ul> 
                             <ul>Correct:{data.score && data.score.correct || 0}</ul>
                             <ul>Incorrect:{data.score && data.score.incorrect || 0}</ul>
                          </ul>
