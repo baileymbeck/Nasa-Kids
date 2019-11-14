@@ -15,6 +15,7 @@ import HighScore from "./components/HighScore"
 
 import Wrapper from "./components/Wrapper"
 import NoMatch from './pages/NoMatch';
+import ClickyHome from './pages/ClickyHome/ClickyHome';
 
 const style = {
   app: {
@@ -42,11 +43,14 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/gamehome" component={GameHome} />
+              <Route exact path="/clickyhome" component={ClickyHome} />
               <Route exact path="/login" component={LoginPage} />
               <Route exact path="/signup" component={SignUpPage} />
               <Route exact path="/highscore" component={HighScore} />
               {/* <Route exact path="/profile" component={} /> */}
               <Route exact path="/clickygame" component={ClickyGame} />
+              <Route exact path="/spaceshuffle" component={SpaceClicky} />
+              <Route exact path="/earthshuffle" component={EarthClicky} />
               <Route exact path="/trivia" component={TriviaGame} />
               <Route component={NoMatch} />
             </Switch>

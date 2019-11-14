@@ -1,11 +1,6 @@
 import React, { Component } from "react";
 import api from "../../api";
 
-const style = {
-    score: {
-        marginTop: "125px"
-    }
-}
 
 
 class HighScore extends React.Component {
@@ -35,7 +30,7 @@ s
 
         return (
             <div>
-                <h1 style={style.score}>HighScore</h1>
+                <h1>HighScore</h1>
                 <div>
                     {this.state.scores.map(data =>
                         <ul key={data._id}>

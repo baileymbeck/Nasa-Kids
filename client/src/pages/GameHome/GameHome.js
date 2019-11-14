@@ -24,7 +24,7 @@ class GameHome extends Component {
                         </Link>
                     </Col>
                     <Col size="md-3">
-                        <Link to="/clickygame">
+                        <Link to="/clickyhome">
                             <Button text="Clicky Game" image={Click}></Button>
                         </Link>
                     </Col>
