@@ -1,4 +1,4 @@
-const db = require("../models");
+const db = require("../Server/db/models");
 
 module.exports = {
     // ?game=triva OR ?userId=skldjfgjsadflkfjasdfjgksj
