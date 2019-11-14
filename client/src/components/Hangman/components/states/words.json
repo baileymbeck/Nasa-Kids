@@ -1,0 +1,14 @@
+[
+    {
+        "word": "nebula",
+        "image": "/img/hangman/nebula.jps"
+    },
+    {
+        "word": "asteroid",
+        "image": "/img/hangman/asteroid.jps"
+    },
+    {
+        "word": "black hole",
+        "image": "/img/hangman/blackHole.jps"
+    }
+]
