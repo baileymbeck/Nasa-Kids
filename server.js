@@ -1,12 +1,12 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const routes = require("../routes");
+const routes = require("./routes");
 const bodyParser = require('body-parser')
 const morgan = require('morgan')
 const session = require('express-session')
 const MongoStore = require('connect-mongo')(session)
-const dbConnection = require('./db') // loads our connection to the mongo database
-const passport = require('./passport')
+const dbConnection = require('./Server/db') // loads our connection to the mongo database
+const passport = require('./Server/passport')
 
 
 const app = express();
@@ -54,7 +54,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 /* Express app ROUTING */
-app.use('/auth', require('./auth'))
+app.use('/auth', require('./Server/auth'))
 
 // ====== Error handler ====
 app.use(function(err, req, res, next) {

@@ -5,6 +5,10 @@ import "./signup.css"
 
 function SignUpForm({ userName, email, password, handleInputChange, handleFormSubmit }) {
 
+    handleFormSubmit = event => {
+
+    }
+
     return (
         <form className="signUpContainer">
             <div className="signup-size">
