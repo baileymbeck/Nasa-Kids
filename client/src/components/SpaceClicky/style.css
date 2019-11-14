@@ -1,8 +1,17 @@
-title {
-    font-size: 25px;
+@font-face {
+    font-family: "./Smile-ICG-Medium.ttf";
+    src: url("./Smile-ICG-Medium.ttf");
 }
 
-.card-wrapper {
-    width: 100px;
-    background-color: red;
+title {
+    font-family: "./Smile-ICG-Medium.ttf";
+}
+
+.layout {
+    width: 55%;
+    margin: auto;
+}
+
+.row-game {
+    width: 100%;
 }

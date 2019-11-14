@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import ImageCard from "./components/ImageCard"; 
-import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import cards from "./earth.json";
 import "./style.css";
+import api from "../../api";
 
 class App extends Component {
 
@@ -63,8 +63,18 @@ class App extends Component {
       clicked: []
     });
     this.handleShuffle();
+    this.saveScore();
     
   };
+
+
+  saveScore = (correct) => {
+    api.saveScore({
+      game: "clicky",
+      score: this.state.highscore,
+      userId: "kristen"
+    })
+  }
 
   handleShuffle = () => {
     let shuffledCards = this.shuffleArray(cards);
@@ -73,10 +83,9 @@ class App extends Component {
 
   render() {
     return (
-      <div className="row">
+      <div className="row-game">
       <Title score={this.state.score} highscore={this.state.highscore} rightWrong={this.state.rightWrong}></Title>
-      <Wrapper className="card-wrapper">
-        {this.state.cards.map(card => (
+        <div className="layout">{this.state.cards.map(card => (
           <ImageCard 
             id={card.id}
             key={card.id}
@@ -86,8 +95,8 @@ class App extends Component {
             handleReset={this.handleReset}
             handleShuffle={this.handleShuffle}
           />
-        ))}
-      </Wrapper>
+          ))}
+        </div>
       </div>
     );
   }
