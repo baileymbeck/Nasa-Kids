@@ -8,5 +8,330 @@
         "id": 2,
         "term": "Atmosphere:",
         "definition": "The gases held by gravity around Earth and around other planets. \"Atmosphere\" can also be used to talk about gases around stars."
+    },
+    {
+        "id": 3,
+        "term": "Atom:",
+        "definition": "The basic building block of matter. It is made of protons, neutrons, and electrons. There are many different kinds of atoms. For example, the simplest atom with one proton and one electron is a hydrogen atom. An atom with six protons, six neutrons, and six electrons is a carbon atom."
+    },
+    {
+        "id": 4,
+        "term": "Aurora Australis:",
+        "definition": "Bright glows and bands of light that appear in the skies at night near the South Pole. They are also called the southern lights."
+    },
+    {
+        "id": 5,
+        "term": "Aurora Borealis:",
+        "definition": "Bright glows and bands of light that appear in the skies at night near the North Pole. They are also called the northern lights."
+    },
+    {
+        "id": 6,
+        "term": "Black Hole:",
+        "definition": "A place in space where matter and light cannot escape if they fall in."
+    },
+    {
+        "id": 7,
+        "term": "Comet:",
+        "definition": "An icy rock that lets off gas and dust, which may form tails when it is flying close to a sun."
+    },
+    {
+        "id": 8,
+        "term": "Constellation:",
+        "definition": "A group of stars in the sky. They're often named after an animal, object, or person. The stars form certain patterns based on where you are. We have one view of stars here on Earth, but from another solar system or galaxy, the constellations would look different."
+    },
+    {
+        "id": 9,
+        "term": "Corona:",
+        "definition": "The outer atmosphere of a star."
+    },
+    {
+        "id": 10,
+        "term": "Cosmos:",
+        "definition": "The universe seen as an orderly, harmonious whole."
+    },
+    {
+        "id": 11,
+        "term": "Crater:",
+        "definition": "A large, bowl-shaped dent in the ground. They can be caused by an explosion or the impact of a meteorite."
+    },
+    {
+        "id": 12,
+        "term": "Dwarf Planet:",
+        "definition": "Objects that are round and orbit the sun, just like planets do. But unlike planets, dwarf planets are not able to clear their path around the sun. That means there are other objects orbiting at roughly the same distance from the sun. A dwarf planet is much smaller than a planet (smaller even than Earth's moon), but it is not a moon. Pluto is the best known of the dwarf planets."
+    },
+    {
+        "id": 13,
+        "term": "El Niño:",
+        "definition": "A weather condition that sometimes occurs in the Pacific Ocean. It is so big that it affects weather all over the world. It starts with unusually warm water in the Pacific Ocean near the equator."
+    },
+    {
+        "id": 14,
+        "term": "Electromagnetic Spectrum:",
+        "definition": "The name for all the different kinds of light and energy in the universe. This includes radio waves, microwaves, infrared radiation, visible light, ultraviolet light, X-rays, and gamma rays."
+    },
+    {
+        "id": 15,
+        "term": "Equator:",
+        "definition": "The circle around a planet or moon that is the same distance from its north pole and its south pole."
+    },
+    {
+        "id": 16,
+        "term": "Exoplanet:",
+        "definition": "A planet that freely floats between stars or one that orbits a star outside our solar system."
+    },
+    {
+        "id": 17,
+        "term": "Galaxy:",
+        "definition": "A collection of thousands to billions of stars held together by gravity. The galaxy we live in is called the Milky Way."
+    },
+    {
+        "id": 18,
+        "term": "Gamma Rays:",
+        "definition": "Part of the electromagnetic spectrum, also called gamma radiation. These waves have lots of energy. They come from big events like solar flares and exploding stars."
+    },
+    {
+        "id": 19,
+        "term": "Gas:",
+        "definition": "A loose collection of atoms moving around each other."
+    },
+    {
+        "id": 20,
+        "term": "GPS:",
+        "definition": "This stands for Global Positioning System. It’s a system that uses satellites, ground stations, and receivers to tell you exactly where you are on Earth."
+    },
+    {
+        "id": 21,
+        "term": "Gravity:",
+        "definition": "A force that pulls matter together."
+    },
+    {
+        "id": 22,
+        "term": "Greenhouse Gas:",
+        "definition": "Gases in the atmosphere that trap heat from the sun. Some greenhouse gases are carbon dioxide, methane, water vapor, and nitrous oxide."
+    },
+    {
+        "id": 23,
+        "term": "Infrared:",
+        "definition": "Part of the electromagnetic spectrum that we cannot see with our eyes but can feel as heat. It is made of waves released by hot objects, such as stars. We call it infrared because these waves are just a little longer than the wavelengths of red light we can see."
+    },
+    {
+        "id": 24,
+        "term": "Kuiper Belt:",
+        "definition": "A donut-shaped ring of icy objects beyond the orbit of Neptune. Pluto is the best known of these icy worlds."
+    },
+    {
+        "id": 25,
+        "term": "La Niña:",
+        "definition": "The opposite of El Niño. La Niña happens because of unusually cold sea surface temperatures across the east-central Equatorial Pacific. During a La Niña year, winter temperatures are warmer than normal in the Southeast and cooler than normal in the Northwest United States."
+    },
+    {
+        "id": 26,
+        "term": "Light Year:",
+        "definition": "It’s not a year, or an amount of time at all. It’s the distance light travels in one year. It’s the same as 5,878,499,810,000 miles (or 9,460,538,400,000,000 meters). When things are very far away, it’s easier to talk about their distance in light years than millions or billions or trillions of miles."
+    },
+    {
+        "id": 27,
+        "term": "Magnetic Field:",
+        "definition": "The space around a magnet where the magnetic force is active. Earth has a magnetic field and its extension into space helps protect us from space weather."
+    },
+    {
+        "id": 28,
+        "term": "Mass:",
+        "definition": "The amount of matter something is made of."
+    },
+    {
+        "id": 29,
+        "term": "Matter:",
+        "definition": "The stuff that everything is made of. Atoms are a tiny bit of matter. Big planets have lots of matter. Even you are made of matter!"
+    },
+    {
+        "id": 30,
+        "term": "Meteor:",
+        "definition": "The streak of light caused when a meteoroid enters a planet’s atmosphere and starts to burn from the heat of friction."
+    },
+    {
+        "id": 31,
+        "term": "Meteorite:",
+        "definition": "A meteoroid that lands on the surface of a planet."
+    },
+    {
+        "id": 32,
+        "term": "Meteoroid:",
+        "definition": "A little chunk of rock in space smaller than a pick-up truck. If it were bigger, it would be an asteroid."
+    },
+    {
+        "id": 33,
+        "term": "Microwaves:",
+        "definition": "Part of the electromagnetic spectrum. These waves of energy are made by stars, the clouds of gas between stars, and supernovae. There is also something called “cosmic microwave background radiation.” It’s all over the universe, and scientists study it to learn how the universe began."
+    },
+    {
+        "id": 34,
+        "term": "Molecule:",
+        "definition": "The smallest unit of a substance that still acts like the main substance. A molecule can be a single atom or a group of atoms. Water is a substance, and one molecule of water is made of two hydrogen atoms and one oxygen atom, which we write as H2O. That molecule of water still has the same properties as a glass of water. But if you split it into hydrogen and oxygen, it’s not water anymore."
+    },
+    {
+        "id": 35,
+        "term": "Moon:",
+        "definition": "A natural object that travels around a bigger natural object. Planets can have moons. Dwarf planets can have moons. Even some asteroids have moons! Astronomers usually call them satellites or natural satellites."
+    },
+    {
+        "id": 36,
+        "term": "Nebula:",
+        "definition": "A cloud of dust or gas found between stars."
+    },
+    {
+        "id": 37,
+        "term": "Neutron Star:",
+        "definition": "A very dense star made mostly of neutrons. It has a very powerful gravitational force nearby because the whole mass of a star is pulled into one object just a few miles across."
+    },
+    {
+        "id": 38,
+        "term": "Oort Cloud:",
+        "definition": "A spherical shell around our solar system. It may contain more than a trillion icy bodies. Long-period comets (which take more than 200 years to orbit the sun) come from the Oort Cloud."
+    },
+    {
+        "id": 39,
+        "term": "Orbit:",
+        "definition": "The curved path that a planet, satellite, or spacecraft moves as it circles around another object."
+    },
+    {
+        "id": 40,
+        "term": "Ozone Layer:",
+        "definition": "A part of Earth’s atmosphere that absorbs lots of the sun’s ultraviolet radiation. It is made of a gas called ozone, which is a molecule of three oxygen atoms."
+    },
+    {
+        "id": 41,
+        "term": "Particle:",
+        "definition": "A tiny amount or small piece of something."
+    },
+    {
+        "id": 42,
+        "term": "Planet:",
+        "definition": "A large body in outer space that circles around the sun or another star."
+    },
+    {
+        "id": 43,
+        "term": "Pulsar:",
+        "definition": "An object, thought to be a rapidly rotating neutron star. It releases short pulses of radio waves and other electromagnetic radiation."
+    },
+    {
+        "id": 44,
+        "term": "Quasar:",
+        "definition": "Compact area in the center of a massive galaxy that is around a supermassive black hole. They are some of the brightest objects in the universe and can be observed across the entire electromagnetic spectrum."
+    },
+    {
+        "id": 45,
+        "term": "Radiation:",
+        "definition": "The energy or particles released from sources like radioactive materials, explosions, and chemical reactions. This includes energy waves on the electromagnetic spectrum."
+    },
+    {
+        "id": 46,
+        "term": "Radio Waves:",
+        "definition": "Part of the electromagnetic spectrum. Radio waves are around us here on Earth, and they’re out in space too. These waves are low energy. We use them every time we listen to the radio. They’re used to talk to satellites, too. They are also common in outer space, since they are sent out by forming stars, pulsars, supernovae, the sun, and even colliding galaxies."
+    },
+    {
+        "id": 47,
+        "term": "Radioactive:",
+        "definition": "How we describe some atoms that are unstable. They change into different kinds of atoms and release lots of energy."
+    },
+    {
+        "id": 48,
+        "term": "Satellite:",
+        "definition": "An object that orbits another object. A moon is actually a satellite. We also say satellite to refer to spacecraft people build that orbit Earth, other planets, moons, asteroids, or other objects out in space."
+    },
+    {
+        "id": 49,
+        "term": "Solar Flare:",
+        "definition": "A burst of energy and particles from the sun. It releases gases, radiation waves, and magnetic storms."
+    },
+    {
+        "id": 50,
+        "term": "Solar Panel:",
+        "definition": "A piece of material that can capture sunlight and turn it into electricity."
+    },
+    {
+        "id": 51,
+        "term": "Solar System:",
+        "definition": "A set that includes a star and all of the matter that orbits it, including planets, moons, asteroids, comets, and other objects."
+    },
+    {
+        "id": 52,
+        "term": "Solar Wind:",
+        "definition": "The constant stream of particles and energy emitted by the sun."
+    },
+    {
+        "id": 53,
+        "term": "Space Weather:",
+        "definition": "The conditions in space that can affect Earth, satellites, and space travel. Space weather is mostly the result of solar wind and solar storms."
+    },
+    {
+        "id": 54,
+        "term": "Spacecraft:",
+        "definition": "A vehicle used for traveling in space."
+    },
+    {
+        "id": 55,
+        "term": "Speed of Light:",
+        "definition": "Light is the fastest thing in the universe. It travels 186,282 miles (299,792,458 meters) every second."
+    },
+    {
+        "id": 56,
+        "term": "Star:",
+        "definition": "A ball of shining gas, made mostly of hydrogen and helium, held together by its own gravity. Turning hydrogen into helium creates the energy that makes stars shine."
+    },
+    {
+        "id": 57,
+        "term": "Sun:",
+        "definition": "The star in the center of our solar system."
+    },
+    {
+        "id": 58,
+        "term": "Supermassive:",
+        "definition": "How we describe objects that have a million times (or more!) mass than our sun."
+    },
+    {
+        "id": 59,
+        "term": "Supernova:",
+        "definition": "The explosion of a star that makes it as bright as a whole galaxy."
+    },
+    {
+        "id": 60,
+        "term": "Tectonics:",
+        "definition": "Big movements of Earth’s crust. Tectonics creates mountain ranges, deep sea trenches, volcanoes, and earthquakes that can cause destructive tsunami waves that can cross oceans."
+    },
+    {
+        "id": 61,
+        "term": "Ultraviolet:",
+        "definition": "Part of the electromagnetic spectrum. It’s called ultraviolet because the waves are shorter than violet light. We can’t see ultraviolet light with our eyes, but some birds and insects can. Our sun emits ultraviolet radiation, and it can give you a sunburn if you’re outside without sunblock for too long."
+    },
+    {
+        "id": 62,
+        "term": "Universe:",
+        "definition": "All of space and time, and everything in it. It’s everything ever!"
+    },
+    {
+        "id": 63,
+        "term": "Vacuum:",
+        "definition": "An empty space that doesn't have any matter."
+    },
+    {
+        "id": 64,
+        "term": "Volcano:",
+        "definition": "A mountain or hill that has an opening where lava, rock fragments, or gas erupt from deep inside a planet or moon."
+    },
+    {
+        "id": 65,
+        "term": "Visible Light:",
+        "definition": "The part of the electromagnetic spectrum that we can see with our eyes. It’s all the colors of the rainbow."
+    },
+    {
+        "id": 66,
+        "term": "Wave:",
+        "definition": "A way energy moves from one place to another. Sometimes waves move materials the way water ripples in a pond move the water. Other times, waves don’t move anything around when they transfer energy. For example, X-rays and other waves on the electromagnetic spectrum don’t make any ripples when they move energy from place to place. We classify waves based on how long their wavelengths are. A wavelength is the distance from peak to peak (or valley to valley) of the wave."
+    },
+    {
+        "id": 67,
+        "term": "X-Rays:",
+        "definition": "Radiation with lots of energy made by very hot gases, stars, neutron stars, and gas around black holes. X-rays have so much energy they can pass through solid materials. They are part of the electromagnetic spectrum."
     }
 ]

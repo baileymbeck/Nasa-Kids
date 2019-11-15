@@ -1,0 +1,18 @@
+.row {
+    margin-left: -50px;
+}
+
+.word {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 25px;
+    text-align: right;
+    margin-top: 5px;
+}
+
+.defined {
+    font-size: 25px;
+    line-height: 25px;
+    margin-top: 5px;
+}
