@@ -1,31 +1,46 @@
 import React, { Component } from "react";
+import { Col, Row } from "../../../Grid"
 // import words from "./words.json";
 
-const words = 
-[
-    {
-        "word": "nebula",
-        "image": "/img/hangman/nebula.jps"
+const wordsToPick = [
+    nebula: {
+        word: "nebula",
+        image: "/img/hangman/nebula.jpg"
     },
-    {
-        "word": "asteroid",
-        "image": "/img/hangman/asteroid.jps"
+    asteroid: {
+        word: "asteroid",
+        image: "/img/hangman/asteroid.jpg"
     },
-    {
-        "word": "black hole",
-        "image": "/img/hangman/blackHole.jps"
+    galaxy: {
+        word: "galaxy",
+        image: "/img/hangman/galaxy.jpg"
+    },
+    satellite: {
+        word: "satellite",
+        image: "/img/hangman/satellite.jpg"
+    },
+    supernova: {
+        word: "supernova",
+        image: "/img/hangman/supernova.jpg"
+    },
+    crater: {
+        word: "crater",
+        image: "/img/hangman/crater.jpg"
+    },
+    constellation: {
+        word: "constellation",
+        image: "/img/hangman/constellation.jpg"
+    },
+    pluto: {
+        word: "pluto",
+        image: "/img/hangman/pluto.jpg"
     }
 ]
+console.log("Here are the words:" + wordsToPick);
 
-// randomize function here
-pickWord = () => {
-    (Math.floor(Math.random()*words.length))
-}
-
-
-class HangGame extends Component {
+export default class HangGame extends React.Component {
     state = {
-        wordInPlay: "",
+        wordInPlay: [],
         lettersOfTheWord: [],
         matchedLetters: [],
         guessedLetters: [],
@@ -33,16 +48,27 @@ class HangGame extends Component {
         totalGuesses: 0,
         letterGuessed: [],
         wins: 0,
-    }
+        }
+        // randomize function here
+        setupGame = () => {
+            var objKeys = Object.keys(wordsToPick);
+            var chosenWord = objKeys[Math.floor(Math.random() * objKeys.length)];
+            return this.setState({wordInPlay: chosenWord})
+        };
+        componentDidMount = () => {
+            this.setupGame()
+            console.log(this.state.wordInPlay)
+        }
     // pick method would be here
-    render(){
+    render() {
         return (
-
+           <Row>
+            {this.state.wordInPlay}
+           </Row>
         )
     }
 }
 
-export default HangGame;
 
 
 
