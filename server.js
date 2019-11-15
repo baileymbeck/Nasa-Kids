@@ -63,6 +63,37 @@ app.use(function(err, req, res, next) {
 	res.status(500)
 })
 
+// app.post("/api/login", (req, res, next) => {
+// 	console.log(req.body)
+// 	next();
+// }, passport.authenticate('local'), (req, res) => {
+// 	res.json(req.user)
+// })
+
+// app.get("/api/logout", (req, res) => {
+// 	req.logout();
+// 	res.json(true);
+// })
+
+// app.get("/api/me", function (req, res) {
+// 	res.json(req.user);
+// })
+
+// app.get("/api/mustbeloggedin", function (req, res) {
+// 	if (!req.user == false) {
+// 		return res.status(401).json(false)
+// 	} else {
+// 		return res.send("welcome" + req.user.username)
+// 	}
+// })
+// app.get("api/signup", function(req, res) {
+// 	User.create(req.body).then(dbUser => {
+// 		res.json(true)
+// 	}).catch(err => {
+// 		res.json(err)
+// 	})
+// })
+
 
 // Add routes, both API and view
 app.use(routes);
