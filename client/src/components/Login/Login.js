@@ -36,6 +36,8 @@ class LoginPage extends Component {
 
   handleFormSubmit = event => {
     event.preventDefault();
+    // this.getUsers();
+  
     this.saveUser()
   }
   
