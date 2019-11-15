@@ -2,6 +2,7 @@ const passport = require('passport')
 const LocalStrategy = require('./localStrategy')
 const User = require('../db/models/user')
 
+//take in user_id and store in database
 passport.serializeUser((user, done) => {
 	console.log('=== serialize ... called ===')
 	console.log(user) // the whole raw user object!
@@ -9,6 +10,7 @@ passport.serializeUser((user, done) => {
 	done(null, { _id: user._id })
 })
 
+//going to take userID out of the database
 passport.deserializeUser((id, done) => {
 	console.log('DEserialize ... called')
 	User.findOne(
@@ -26,4 +28,4 @@ passport.deserializeUser((id, done) => {
 // ==== Register Strategies ====
 passport.use(LocalStrategy)
 
-module.exports = passport
+module.exports = passport;
