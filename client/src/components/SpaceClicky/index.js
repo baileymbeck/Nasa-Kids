@@ -69,7 +69,7 @@ class App extends Component {
 
   saveScore = (correct) => {
     api.saveScore({
-      game: "Clicky",
+      game: "clicky",
       score: this.state.highscore,
       userId: "kristen"
     })
