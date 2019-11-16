@@ -11,7 +11,9 @@ import Galaxy from "./galaxy.png";
 import GPS from "./gps.png";
 import Meteoroid from "./meteoroid.png";
 import Molecule from "./molecule.png";
-import Orbit from "./orbit.png"
+import Orbit from "./orbit.png";
+import Satellite from "./satellite.png";
+import Spacecraft from "./spacecraft.png"
 
 
 class Glossary extends Component {
@@ -37,12 +39,15 @@ class Glossary extends Component {
                         <Row>
                             <Col size="md-6"></Col>
                             <Col size="md-6">
-                                <img className="glossimg" src={Atom}/>
+                                <img className="topimg" src={Atom}/>
                             </Col>
                         </Row>
                         <Row><Col size="md-12"><img src={Empty} /></Col></Row>
                         <Row>
-                            <img className="glossimg" src={Comet}/>
+                            <Col size="md-1"></Col>
+                            <Col size="md-11">
+                                <img className="glossimg" src={Comet}/>
+                            </Col>
                         </Row>
                         <Row><Col size="md-12"><img src={Empty} /></Col></Row>
                         <Row><Col size="md-12"><img className="halfsize" src={Empty} /></Col></Row>
@@ -55,7 +60,10 @@ class Glossary extends Component {
                         <Row><Col size="md-12"><img src={Empty} /></Col></Row>
                         <Row><Col size="md-12"><img className="halfsize" src={Empty} /></Col></Row>
                         <Row>
-                            <img className="glossimg" src={Galaxy}/>
+                            <Col size="md-1"></Col>
+                            <Col size="md-11">
+                                <img className="glossimg" src={Galaxy}/>
+                            </Col>
                         </Row>
                         <Row><Col size="md-12"><img src={Empty} /></Col></Row>
                         <Row><Col size="md-12"><img src={Empty} /></Col></Row>
@@ -88,6 +96,21 @@ class Glossary extends Component {
                             <Col size="md-3"></Col>
                             <Col size="md-9">
                                 <img className="glossimg" src={Orbit}/>
+                            </Col>
+                        </Row>
+                        <Row><Col size="md-12"><img src={Empty} /></Col></Row>
+                        <Row><Col size="md-12"><img src={Empty} /></Col></Row>
+                        <Row>
+                            <Col size="md-2"></Col>
+                            <Col size="md-10">
+                                <img className="gps" src={Satellite}/>
+                            </Col>
+                        </Row>
+                        <Row><Col size="md-12"><img src={Empty} /></Col></Row>
+                        <Row><Col size="md-12"><img src={Empty} /></Col></Row>
+                        <Row>
+                            <Col size="md-12">
+                                <img className="spaceship" src={Spacecraft}/>
                             </Col>
                         </Row>
                     </Col>
