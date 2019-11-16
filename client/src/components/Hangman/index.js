@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import words from "./words";
 import Input from "./components/Input";
-// import HangGame from "./components/states/HangGame";
 
 class Hangman extends Component {
     state = {
