@@ -25,7 +25,12 @@ class Input extends Component {
         return (
             <div>
                 <form onSubmit={this.handleSubmit.bind(this)}>
-                    <input type="text" name="userInput" onChange={this.handleInputChange} value={this.state.userInput} maxLength = "1" />
+                    <input 
+                    type="text" 
+                    name="userInput" 
+                    onChange={this.handleInputChange} 
+                    value={this.state.userInput} 
+                    maxLength = "1" />
                     <button>Submit</button>
                 </form>
             </div>
