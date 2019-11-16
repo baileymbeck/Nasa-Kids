@@ -101,15 +101,16 @@ class Glossary extends Component {
                         <Row><Col size="md-12"><img src={Empty} /></Col></Row>
                         <Row><Col size="md-12"><img src={Empty} /></Col></Row>
                         <Row>
-                            <Col size="md-2"></Col>
-                            <Col size="md-10">
+                            <Col size="md-1"></Col>
+                            <Col size="md-11">
                                 <img className="gps" src={Satellite}/>
                             </Col>
                         </Row>
                         <Row><Col size="md-12"><img src={Empty} /></Col></Row>
                         <Row><Col size="md-12"><img src={Empty} /></Col></Row>
                         <Row>
-                            <Col size="md-12">
+                        <Col size="md-3"></Col>
+                            <Col size="md-9">
                                 <img className="spaceship" src={Spacecraft}/>
                             </Col>
                         </Row>
