@@ -5,7 +5,13 @@ import Terms from "../../components/Terms";
 import glossary from "./glossary.json";
 import Atom from "./atom.png";
 import Comet from "./comet.png";
-import Empty from "./empty.png"
+import Empty from "./empty.png";
+import Dwarf from "./dwarf.png";
+import Galaxy from "./galaxy.png";
+import GPS from "./gps.png";
+import Meteoroid from "./meteoroid.png";
+import Molecule from "./molecule.png";
+import Orbit from "./orbit.png"
 
 
 class Glossary extends Component {
@@ -31,12 +37,58 @@ class Glossary extends Component {
                         <Row>
                             <Col size="md-6"></Col>
                             <Col size="md-6">
-                            <img className="glossimg" src={Atom}/>
+                                <img className="glossimg" src={Atom}/>
                             </Col>
                         </Row>
                         <Row><Col size="md-12"><img src={Empty} /></Col></Row>
                         <Row>
                             <img className="glossimg" src={Comet}/>
+                        </Row>
+                        <Row><Col size="md-12"><img src={Empty} /></Col></Row>
+                        <Row><Col size="md-12"><img className="halfsize" src={Empty} /></Col></Row>
+                        <Row>
+                            <Col size="md-6"></Col>
+                            <Col size="md-6">
+                                <img className="glossimg" src={Dwarf}/>
+                            </Col>
+                        </Row>
+                        <Row><Col size="md-12"><img src={Empty} /></Col></Row>
+                        <Row><Col size="md-12"><img className="halfsize" src={Empty} /></Col></Row>
+                        <Row>
+                            <img className="glossimg" src={Galaxy}/>
+                        </Row>
+                        <Row><Col size="md-12"><img src={Empty} /></Col></Row>
+                        <Row><Col size="md-12"><img src={Empty} /></Col></Row>
+                        <Row>
+                            <Col size="md-3"></Col>
+                            <Col size="md-9">
+                                <img className="gps" src={GPS}/>
+                            </Col>
+                        </Row>
+                        <Row><Col size="md-12"><img src={Empty} /></Col></Row>
+                        <Row><Col size="md-12"><img src={Empty} /></Col></Row>
+                        <Row><Col size="md-12"><img className="halfsize" src={Empty} /></Col></Row>
+                        <Row>
+                            <Col size="md-2"></Col>
+                            <Col size="md-10">
+                                <img className="glossimg" src={Meteoroid}/>
+                            </Col>
+                        </Row>
+                        <Row><Col size="md-12"><img src={Empty} /></Col></Row>
+                        <Row><Col size="md-12"><img className="halfsize" src={Empty} /></Col></Row>
+                        <Row>
+                            <Col size="md-6"></Col>
+                            <Col size="md-6">
+                                <img className="glossimg" src={Molecule}/>
+                            </Col>
+                        </Row>
+                        <Row><Col size="md-12"><img src={Empty} /></Col></Row>
+                        <Row><Col size="md-12"><img src={Empty} /></Col></Row>
+                        <Row>
+                            <Col size="md-3"></Col>
+                            <Col size="md-9">
+                                <img className="glossimg" src={Orbit}/>
+                            </Col>
                         </Row>
                     </Col>
                 </Row>
