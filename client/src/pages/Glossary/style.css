@@ -1,0 +1,17 @@
+.row {
+    margin-left: -30px;
+}
+
+.rowimgone {
+    float: right;
+}
+
+.rowimgtwo {
+    float: right;
+}
+
+.glossimg {
+    max-height: 150px;
+    max-width: 200px;
+    margin-top: 10px;
+}
