@@ -2,10 +2,11 @@ import React, { Component } from "react";
 import { Col, Row } from "../../../Grid"
 // import words from "./words.json";
 
-const wordsToPick = [
-    nebula: {
-        word: "nebula",
-        image: "/img/hangman/nebula.jpg"
+const wordsToPick = [{
+    word: "nebula",
+    image: "/img/hangman/nebula.jpg"
+},
+
     },
     asteroid: {
         word: "asteroid",
