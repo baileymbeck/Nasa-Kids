@@ -36,8 +36,11 @@ class LoginPage extends Component {
 
   handleFormSubmit = event => {
     event.preventDefault();
-    this.getUsers();
-  };
+    // this.getUsers();
+  
+    this.saveUser()
+  }
+  
 
   handleUserSave = id => {
     const user = this.state.users.find(user => user.id === id);
