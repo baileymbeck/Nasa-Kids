@@ -1,0 +1,35 @@
+[{
+    nebula: {
+        word: "nebula",
+        image: "/img/hangman/nebula.jpg"
+}, 
+
+asteroid: {
+    word: "asteroid",
+    image: "/img/hangman/asteroid.jpg"
+},
+galaxy: {
+    word: "galaxy",
+    image: "/img/hangman/galaxy.jpg"
+},
+satellite: {
+    word: "satellite",
+    image: "/img/hangman/satellite.jpg"
+},
+supernova: {
+    word: "supernova",
+    image: "/img/hangman/supernova.jpg"
+},
+crater: {
+    word: "crater",
+    image: "/img/hangman/crater.jpg"
+},
+constellation: {
+    word: "constellation",
+    image: "/img/hangman/constellation.jpg"
+},
+pluto: {
+    word: "pluto",
+    image: "/img/hangman/pluto.jpg"
+}
+]
