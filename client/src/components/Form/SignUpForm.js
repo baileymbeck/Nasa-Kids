@@ -53,7 +53,7 @@ class SignUp extends React.Component {
                                 placeholder="Username"
                             />
                         </div>
-                        < br />
+                        
                         <div>
                         <input
                             value={this.state.email}
@@ -62,7 +62,7 @@ class SignUp extends React.Component {
                             placeholder="Email"
                         />
                         </div>
-                        < br />
+                        
                         <input
                             value={this.state.password}
                             onChange={this.handleInputChange}
@@ -70,15 +70,15 @@ class SignUp extends React.Component {
                             placeholder="Password"
                             type="password"
                         />
-                        < br />
+                        
                         <button
                             disabled={!(this.state.userName && this.state.email && this.state.password)}
                             type="submit"
                             onClick={this.handleFormSubmit}
                         >
                             Signup
-                    </button>
-                        <Link to="/">
+                        </button>
+                        <Link to="/home">
                         <button className="login">Login</button>
                         </Link>
                     </div>

@@ -25,7 +25,7 @@ function Form({ userName, email, password, handleInputChange, handleFormSubmit }
                     type="password"
                 />
                 < br />
-                <Link to="/">
+                <Link to="/home">
                 <button
                     // disabled={!(userName && email && password)}
                     type="submit"

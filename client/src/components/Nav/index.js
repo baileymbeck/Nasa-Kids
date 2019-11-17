@@ -32,7 +32,7 @@ class Nav extends Component {
   render() {
     return (
       <nav className="navbar fixed-top navbar-dark">
-        <Link className="navbar-brand" to="/">
+        <Link className="navbar-brand" to="/home">
             <img className="settings" src={Homeimg} />
         </Link>
         <div className="title" style={{fontFamily: {Font1}}}>WELCOME Camila</div>
