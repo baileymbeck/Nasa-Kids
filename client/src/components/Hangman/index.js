@@ -5,7 +5,7 @@ import Input from "./components/Input";
 class Hangman extends Component {
     state = {
         puzzle: words[Math.floor(Math.random() * words.length)],
-        guessedLetters: []        
+        guessedLetters: []
         }
 
     handleGuessedLetter(letter) {
@@ -19,26 +19,25 @@ class Hangman extends Component {
     }
 
     getIncorrectGuesses() {
-        const output = this.state.guessedLetters.filter(letter => this.state.puzzle.includes(letter) === false)
-        return output
+        const incorrect = this.state.guessedLetters.filter(letter => this.state.puzzle.includes(letter) === false)
+        return incorrect;
     }
 
     getCorrectGuesses() {
-        const output = this.state.guessedLetters.filter(letter => this.state.puzzle.includes(letter))
-        return output
+        const correct = this.state.guessedLetters.filter(letter => this.state.puzzle.includes(letter))
+        return correct;
     }
 
     displayCurrentProgress() {
-        let output = ""
+        let progress = ""
         for (let index in this.state.puzzle){
             let letter = this.state.puzzle.charAt(index)
             if (this.state.guessedLetters.includes(letter)){
-                output += `${letter}`
+                progress += `${letter}`
             } else {
-                output += '_ '
+                progress += '_ '
             }
-        }
-        return output;
+        } return progress;
     }
 
     render() {
