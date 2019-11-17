@@ -45,10 +45,11 @@ class App extends Component {
         <Nav/>
           <Wrapper>
             <Switch>
-              <Route exact path="/" component={Home} />
+              <Route exact path="/" component={LoginPage} />
+              <Route exact path="/home" component={Home} />
               <Route exact path="/gamehome" component={GameHome} />
               <Route exact path="/clickyhome" component={ClickyHome} />
-              <Route exact path="/login" component={LoginPage} />
+              {/* <Route exact path="/login" component={LoginPage} /> */}
               <Route exact path="/signup" component={SignUpPage} />
               <Route exact path="/scores" component={Scores} />
               {/* <Route exact path="/profile" component={} /> */}

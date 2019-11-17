@@ -17,9 +17,10 @@ input {
     outline: none;
 }
 
-.login {
+/* .login {
     float: right;
-}
+    flex: auto;
+} */
 
 label {
     font-weight: bold;
