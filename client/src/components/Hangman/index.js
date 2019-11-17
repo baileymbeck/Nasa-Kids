@@ -4,13 +4,13 @@ import Input from "./components/Input";
 
 class Hangman extends Component {
     state = {
-        puzzle: words[Math.floor(Math.random() * words.length)],
+        puzzle: null,
         lettersInPuzzle: [],
-        correct: [],
-        guessedLetters: [],
+        correct: "",
         incorrect: "",
         wordView: "",
-        guessesLeft: 8
+        guessesLeft: 8,
+        wins: 0
     }
 
     componentDidMount() {
@@ -19,8 +19,9 @@ class Hangman extends Component {
     }
 
     setUpGame() {
+        this.state.puzzle = words[Math.floor(Math.random() * words.length)];
         this.state.lettersInPuzzle = this.state.puzzle.split("");
-        this.rebuildProgress();
+        this.rebuildProgress()
     }
 
     rebuildProgress() {
@@ -39,16 +40,19 @@ class Hangman extends Component {
 
     handleGuessedLetter(letter) {
         if (this.state.guessesLeft === 0) {
-            this.setUpGame()
+            this.restartGame();
         } else {
             this.updateGuesses(letter);
             this.updateMatchedLetters(letter);
             this.rebuildProgress();
+            if (this.updateWins() === true) {
+                this.restartGame();
+            }
         }
     }
 
     updateGuesses(letter) {
-        if ((this.state.guessedLetters.indexOf(letter) === -1) && (this.state.lettersInPuzzle.indexOf(letter) === -1)) {
+        if ((this.state.incorrect.indexOf(letter) === -1) && (this.state.lettersInPuzzle.indexOf(letter) === -1)) {
             this.state.incorrect += letter;
             this.state.guessesLeft--;
         }
@@ -59,6 +63,42 @@ class Hangman extends Component {
             if ((letter === this.state.lettersInPuzzle[i]) && (this.state.correct.indexOf(letter) === -1)) {
                 this.state.correct += letter;
             }
+        }
+    }
+
+    restartGame() {
+        this.setState({
+            puzzle: null,
+            lettersInPuzzle: [],
+            correct: "",
+            incorrect: "",
+            wordView: "",
+            guessesLeft: 8,
+        });
+        this.setUpGame();
+        console.log(this.state)
+        
+    }
+
+    updateWins() {
+        var win;
+        if (this.state.correct.length === 0) {
+            win = false;
+        } else {
+            win = true;
+        }
+
+        for (var i = 0; i < this.state.lettersInPuzzle.length; i++) {
+            if (this.state.correct.indexOf(this.state.lettersInPuzzle[i]) === -1) {
+                win = false;
+            }
+        }
+
+        if (win) {
+            this.state.wins++;
+            return true;
+        } else {
+            return false
         }
     }
 
@@ -103,7 +143,7 @@ class Hangman extends Component {
                 Earth Protector 
             </h2>
             <h3>
-            You have 8 tries to guess the word before Earth crashes into the sun. Go!
+            You have {this.state.guessesLeft} tries to guess the word before Earth crashes into the sun. Go!
             </h3>
             {this.state.puzzle}
             <p>Incorrect Guesses: {this.state.incorrect} </p>

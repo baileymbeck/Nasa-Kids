@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./style.css"
 
 class Input extends Component {
     state = {
@@ -24,14 +25,14 @@ class Input extends Component {
     render() {
         return (
             <div>
-                <form onSubmit={this.handleSubmit.bind(this)}>
+                <form className="hangmanguess" onSubmit={this.handleSubmit.bind(this)}>
                     <input 
                     type="text" 
                     name="userInput" 
                     onChange={this.handleInputChange} 
                     value={this.state.userInput} 
-                    maxLength = "1" />
-                    <button>Submit</button>
+                    maxLength = "1" /><br />
+                    <button>Guess</button>
                 </form>
             </div>
         );
