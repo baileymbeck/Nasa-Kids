@@ -31,47 +31,48 @@ import HardImg7 from "./img/earth-hard/earth7.jpg"
 import HardImg8 from "./img/earth-hard/earth8.jpg"
 import HardImg9 from "./img/earth-hard/earth9.jpg"
 
+const images = {
+  easy: [
+    EasyImg1,
+    EasyImg2,
+    EasyImg3,
+    EasyImg4,
+    EasyImg5,
+    EasyImg6,
+    EasyImg7,
+    EasyImg8,
+    EasyImg9,],
+  medium: [
+    MedImg1,
+    MedImg2,
+    MedImg3,
+    MedImg4,
+    MedImg5,
+    MedImg6,
+    MedImg7,
+    MedImg8,
+    MedImg9,],
+  hard: [
+    HardImg1,
+    HardImg2,
+    HardImg3,
+    HardImg4,
+    HardImg5,
+    HardImg6,
+    HardImg7,
+    HardImg8,
+    HardImg9,]
+}
 
 class App extends Component {
 
   state = {
-    cards: this.props.cards,
+    cards: this.props.cards.map((card, i) => ({...card, image: images[this.props.level][i]})),
     score: 0,
     highscore: 0,
     rightWrong: "Click on a planet to earn points, but don't click on it more than once!",
-    clicked:[],
-    images: { 
-      easy: [
-      EasyImg1,
-      EasyImg2,
-      EasyImg3,
-      EasyImg4,
-      EasyImg5,
-      EasyImg6,
-      EasyImg7,
-      EasyImg8,
-      EasyImg9,],
-      medium: [
-        MedImg1,
-        MedImg2,
-        MedImg3,
-        MedImg4,
-        MedImg5,
-        MedImg6,
-        MedImg7,
-        MedImg8,
-        MedImg9,],
-      hard: [
-        HardImg1,
-        HardImg2,
-        HardImg3,
-        HardImg4,
-        HardImg5,
-        HardImg6,
-        HardImg7,
-        HardImg8,
-        HardImg9,]
-  }
+    clicked:[]
+
   };
 
 
@@ -152,7 +153,7 @@ class App extends Component {
           <ImageCard 
             id={card.id}
             key={card.id}
-            image={this.state.images[this.props.level][i]}
+            image={card.image}
             handleClick={this.handleClick}
             handleIncrement={this.handleIncrement}
             handleReset={this.handleReset}
