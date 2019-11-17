@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "image": "/img/earth-hard/earth1.jpg",
+        "clicked": false
+    },
+    {
+        "id": 2,
+        "image": "/img/earth-hard/earth2.jpg",
+        "clicked": false
+    },
+    {
+        "id": 3,
+        "image": "/img/earth-hard/earth3.jpg",
+        "clicked": false
+    },
+    {
+        "id": 4,
+        "image": "/img/earth-hard/earth4.jpg",
+        "clicked": false
+    },
+    {
+        "id": 5,
+        "image": "/img/earth-hard/earth5.jpg",
+        "clicked": false
+    },
+    {
+        "id": 6,
+        "image": "/img/earth-hard/earth6.jpg",
+        "clicked": false
+    },
+    {
+        "id": 7,
+        "image": "/img/earth-hard/earth7.jpg",
+        "clicked": false
+    },
+    {
+        "id": 8,
+        "image": "/img/earth-hard/earth8.jpg",
+        "clicked": false
+    }
+]

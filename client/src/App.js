@@ -17,6 +17,9 @@ import Glossary from "./pages/Glossary/Glossary"
 import Wrapper from "./components/Wrapper"
 import NoMatch from './pages/NoMatch';
 import ClickyHome from './pages/ClickyHome/ClickyHome';
+import easycards from "./components/ClickyGame/cards.json";
+import mediumcards from "./components/ClickyGame/space.json";
+import hardcards from "./components/ClickyGame/earth.json";
 
 const style = {
   app: {
@@ -49,9 +52,9 @@ class App extends Component {
               <Route exact path="/signup" component={SignUpPage} />
               <Route exact path="/scores" component={Scores} />
               {/* <Route exact path="/profile" component={} /> */}
-              <Route exact path="/clickygame" component={ClickyGame} />
-              <Route exact path="/spaceshuffle" component={SpaceClicky} />
-              <Route exact path="/earthshuffle" component={EarthClicky} />
+              <Route exact path="/clickygame" component={() => <ClickyGame cards={easycards}/>} />
+              <Route exact path="/spaceshuffle" component={() => <ClickyGame cards={mediumcards} />}/>
+              <Route exact path="/earthshuffle" component={() => <ClickyGame cards={hardcards} />}/>
               <Route exact path="/trivia" component={TriviaGame} />
 
               <Route exact path="/hangman" component={Hangman} />
