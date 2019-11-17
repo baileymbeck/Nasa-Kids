@@ -3,6 +3,16 @@ import ImageCard from "./components/ImageCard";
 import Title from "./components/Title";
 import "./style.css";
 import api from "../../api";
+import Img1 from "./img/img1.png"
+import Img2 from "./img/img2.png"
+import Img3 from "./img/img3.png"
+import Img4 from "./img/img4.png"
+import Img5 from "./img/img5.png"
+import Img6 from "./img/img6.png"
+import Img7 from "./img/img7.png"
+import Img8 from "./img/img8.png"
+import Img9 from "./img/img9.png"
+
 
 class App extends Component {
 
@@ -11,7 +21,18 @@ class App extends Component {
     score: 0,
     highscore: 0,
     rightWrong: "Click on a planet to earn points, but don't click on it more than once!",
-    clicked:[]
+    clicked:[],
+    images: [
+      Img1,
+      Img2,
+      Img3,
+      Img4,
+      Img5,
+      Img6,
+      Img7,
+      Img8,
+      Img9,
+    ]
   };
 
 
@@ -88,11 +109,11 @@ class App extends Component {
     return (
       <div className="row-game">
       <Title score={this.state.score} highscore={this.state.highscore} rightWrong={this.state.rightWrong}></Title>
-        <div className="layout">{this.state.cards.map(card => (
+        <div className="layout">{this.state.cards.map((card, i) => (
           <ImageCard 
             id={card.id}
             key={card.id}
-            image={card.image}
+            image={this.state.images[i]}
             handleClick={this.handleClick}
             handleIncrement={this.handleIncrement}
             handleReset={this.handleReset}

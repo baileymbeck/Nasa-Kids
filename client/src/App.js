@@ -3,8 +3,6 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 import TriviaGame from "./components/TriviaGame";
 import ClickyGame from "./components/ClickyGame";
-import SpaceClicky from "./components/SpaceClicky";
-import EarthClicky from "./components/EarthClicky";
 import Hangman from "./components/Hangman";
 import Nav from "./components/Nav";
 import Home from "./pages/Home/Home";
