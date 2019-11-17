@@ -32,9 +32,9 @@ function Form({ userName, email, password, handleInputChange, handleFormSubmit }
                 >
                     Login
                     </button>
-                <Link to="/signup">
-                    <button className="signup">Signup</button>
-                </Link>
+                {/* <Link to="/signup"> */}
+                    {/* <button className="signup">Signup</button> */}
+                {/* </Link> */}
             </div>
         </form>
     )

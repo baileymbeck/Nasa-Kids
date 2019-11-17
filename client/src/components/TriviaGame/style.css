@@ -16,6 +16,6 @@ h2, h3 {
     letter-spacing: 2px;
 }
 
-h3:hover {
+.tiviaanswer:hover {
     cursor: pointer;
 }

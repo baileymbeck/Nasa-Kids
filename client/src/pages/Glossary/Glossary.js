@@ -13,7 +13,8 @@ import Meteoroid from "./meteoroid.png";
 import Molecule from "./molecule.png";
 import Orbit from "./orbit.png";
 import Satellite from "./satellite.png";
-import Spacecraft from "./spacecraft.png"
+import Spacecraft from "./spacecraft.png";
+import Volcano from "./volcano.png"
 
 
 class Glossary extends Component {
@@ -112,6 +113,16 @@ class Glossary extends Component {
                         <Col size="md-3"></Col>
                             <Col size="md-9">
                                 <img className="spaceship" src={Spacecraft}/>
+                            </Col>
+                        </Row>
+                        <Row><Col size="md-12"><img src={Empty} /></Col></Row>
+                        <Row><Col size="md-12"><img src={Empty} /></Col></Row>
+                        <Row><Col size="md-12"><img src={Empty} /></Col></Row>
+                        <Row><Col size="md-12"><img src={Empty} /></Col></Row>
+                        <Row>
+                            <Col size="md-1"></Col>
+                            <Col size="md-11">
+                                <img className="spaceship" src={Volcano}/>
                             </Col>
                         </Row>
                     </Col>
