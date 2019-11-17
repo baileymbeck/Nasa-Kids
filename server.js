@@ -1,4 +1,5 @@
 const express = require("express");
+const path = require("path");
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const bodyParser = require('body-parser')
@@ -42,16 +43,6 @@ app.use(passport.session()) // will call the deserializeUser
 // if (process.env.NODE_ENV === "production") {
 //   app.use(express.static("client/build"));
 // }
-
-// ==== if its production environment!
-if (process.env.NODE_ENV === 'production') {
-	const path = require('path')
-	console.log('YOU ARE IN THE PRODUCTION ENV')
-	app.use('/static', express.static(path.join(__dirname, '../build/static')))
-	app.get('/', (req, res) => {
-		res.sendFile(path.join(__dirname, '../build/'))
-	})
-}
 
 /* Express app ROUTING */
 app.use('/auth', require('./Server/auth'))
@@ -100,6 +91,19 @@ app.use(routes);
 
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/nasaUser");
+
+
+// If the request does not match any other route, serve the matching file out
+// of the build directory
+if (process.env.NODE_ENV === 'production') {
+	app.use('/static', express.static(path.join(__dirname, 'client', 'build', 'static')));
+	app.use('/', (_, res) => {
+		res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
+	});
+} else {
+	app.use('/', express.static(path.join(__dirname, 'client', 'public')))
+}
+
 
 // Start the API server
 app.listen(PORT, function () {
