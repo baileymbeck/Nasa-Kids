@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import ImageCard from "./components/ImageCard"; 
 import Title from "./components/Title";
-import cards from "./cards.json";
+import cards from "../../cards.json";
 import "./style.css";
 import api from "../../api";
+import "./img1.png";
+import "./img/img1.png"
 
 class App extends Component {
 

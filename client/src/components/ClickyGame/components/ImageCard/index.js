@@ -1,5 +1,7 @@
 import React from "react";
 import "./style.css";
+import "./img1.png";
+import "./img/img1.png"
 
 function ImageCard(props) {
   return (
