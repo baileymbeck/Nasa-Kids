@@ -3,15 +3,33 @@ import ImageCard from "./components/ImageCard";
 import Title from "./components/Title";
 import "./style.css";
 import api from "../../api";
-import Img1 from "./img/img1.png"
-import Img2 from "./img/img2.png"
-import Img3 from "./img/img3.png"
-import Img4 from "./img/img4.png"
-import Img5 from "./img/img5.png"
-import Img6 from "./img/img6.png"
-import Img7 from "./img/img7.png"
-import Img8 from "./img/img8.png"
-import Img9 from "./img/img9.png"
+import EasyImg1 from "./img/planets-easy/img1.png"
+import EasyImg2 from "./img/planets-easy/img2.png"
+import EasyImg3 from "./img/planets-easy/img3.png"
+import EasyImg4 from "./img/planets-easy/img4.png"
+import EasyImg5 from "./img/planets-easy/img5.png"
+import EasyImg6 from "./img/planets-easy/img6.png"
+import EasyImg7 from "./img/planets-easy/img7.png"
+import EasyImg8 from "./img/planets-easy/img8.png"
+import EasyImg9 from "./img/planets-easy/img9.png"
+import MedImg1 from "./img/space-medium/space1.jpg"
+import MedImg2 from "./img/space-medium/space2.jpg"
+import MedImg3 from "./img/space-medium/space3.jpg"
+import MedImg4 from "./img/space-medium/space4.jpg"
+import MedImg5 from "./img/space-medium/space5.jpg"
+import MedImg6 from "./img/space-medium/space6.jpg"
+import MedImg7 from "./img/space-medium/space7.jpg"
+import MedImg8 from "./img/space-medium/space8.jpg"
+import MedImg9 from "./img/space-medium/space9.jpg"
+import HardImg1 from "./img/earth-hard/earth1.jpg"
+import HardImg2 from "./img/earth-hard/earth2.jpg"
+import HardImg3 from "./img/earth-hard/earth3.jpg"
+import HardImg4 from "./img/earth-hard/earth4.jpg"
+import HardImg5 from "./img/earth-hard/earth5.jpg"
+import HardImg6 from "./img/earth-hard/earth6.jpg"
+import HardImg7 from "./img/earth-hard/earth7.jpg"
+import HardImg8 from "./img/earth-hard/earth8.jpg"
+import HardImg9 from "./img/earth-hard/earth9.jpg"
 
 
 class App extends Component {
@@ -22,17 +40,38 @@ class App extends Component {
     highscore: 0,
     rightWrong: "Click on a planet to earn points, but don't click on it more than once!",
     clicked:[],
-    images: [
-      Img1,
-      Img2,
-      Img3,
-      Img4,
-      Img5,
-      Img6,
-      Img7,
-      Img8,
-      Img9,
-    ]
+    images: { 
+      easy: [
+      EasyImg1,
+      EasyImg2,
+      EasyImg3,
+      EasyImg4,
+      EasyImg5,
+      EasyImg6,
+      EasyImg7,
+      EasyImg8,
+      EasyImg9,],
+      medium: [
+        MedImg1,
+        MedImg2,
+        MedImg3,
+        MedImg4,
+        MedImg5,
+        MedImg6,
+        MedImg7,
+        MedImg8,
+        MedImg9,],
+      hard: [
+        HardImg1,
+        HardImg2,
+        HardImg3,
+        HardImg4,
+        HardImg5,
+        HardImg6,
+        HardImg7,
+        HardImg8,
+        HardImg9,]
+  }
   };
 
 
@@ -113,7 +152,7 @@ class App extends Component {
           <ImageCard 
             id={card.id}
             key={card.id}
-            image={this.state.images[i]}
+            image={this.state.images[this.props.level][i]}
             handleClick={this.handleClick}
             handleIncrement={this.handleIncrement}
             handleReset={this.handleReset}
