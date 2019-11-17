@@ -38,8 +38,8 @@ class Home extends Component {
                 <Row><h4 className="imageofdaytitle">{this.state.result.title}</h4></Row>
                 <Row>
                     <Col size="md-3">
-                        <Link to="/highscore">
-                            <Button text="My High Scores" image={Rocket}></Button>
+                        <Link to="/scores">
+                            <Button text="My Scores" image={Rocket}></Button>
                         </Link>
                     </Col>
                     <Col size="md-3">
