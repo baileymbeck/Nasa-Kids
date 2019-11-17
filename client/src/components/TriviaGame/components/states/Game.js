@@ -116,7 +116,7 @@ export default class Game extends React.Component {
                         <h2>Time Remaining: {this.state.timer}</h2>
                         <h2>{questions[this.state.questionIndex].question}</h2>
                         <div>{questions[this.state.questionIndex].answers.map((answer, index) => {
-                            return (<h3 onClick={() => this.handleQuestion(answer)} key={index} >{answer}</h3>)
+                            return (<h3 className="tiviaanswer" onClick={() => this.handleQuestion(answer)} key={index} >{answer}</h3>)
 
                         })}
                         </div>

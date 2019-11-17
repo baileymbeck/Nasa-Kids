@@ -1,0 +1,12 @@
+.hangmanguess > input {
+    width: 50px;
+    margin-left: 15px;
+    text-align: center;
+    padding: 0;
+}
+
+.hangmanguess > button {
+    width: 80px;
+    text-align: center;
+    padding: 0px;
+}
