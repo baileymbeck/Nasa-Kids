@@ -25,18 +25,20 @@ function Form({ userName, email, password, handleInputChange, handleFormSubmit }
                     type="password"
                 />
                 < br />
+                <Link to="/">
                 <button
-                    disabled={!(userName && email && password)}
+                    // disabled={!(userName && email && password)}
                     type="submit"
-                    onClick={handleFormSubmit}
+                // onClick={handleFormSubmit}
                 >
                     Login
                     </button>
-                {/* <Link to="/signup"> */}
-                    {/* <button className="signup">Signup</button> */}
-                {/* </Link> */}
+                    </Link>
+            <Link to="/signup">
+                <button className="signup">Signup</button>
+            </Link>
             </div>
-        </form>
+        </form >
     )
 };
 
