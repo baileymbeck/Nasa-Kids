@@ -67,6 +67,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/nasaUser");
 // of the build directory
 if (process.env.NODE_ENV === 'production') {
 	app.use('/static', express.static(path.join(__dirname, 'client', 'build', 'static')));
+	app.use('/img', express.static(path.join(__dirname, 'client', 'build', 'img')));
 	app.use('/', (_, res) => {
 		res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
 	});

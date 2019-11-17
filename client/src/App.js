@@ -3,8 +3,6 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 import TriviaGame from "./components/TriviaGame";
 import ClickyGame from "./components/ClickyGame";
-import SpaceClicky from "./components/SpaceClicky";
-import EarthClicky from "./components/EarthClicky";
 import Hangman from "./components/Hangman";
 import Nav from "./components/Nav";
 import Home from "./pages/Home/Home";
@@ -53,9 +51,9 @@ class App extends Component {
               <Route exact path="/signup" component={SignUpPage} />
               <Route exact path="/scores" component={Scores} />
               {/* <Route exact path="/profile" component={} /> */}
-              <Route exact path="/clickygame" component={() => <ClickyGame cards={easycards}/>} />
-              <Route exact path="/spaceshuffle" component={() => <ClickyGame cards={mediumcards} />}/>
-              <Route exact path="/earthshuffle" component={() => <ClickyGame cards={hardcards} />}/>
+              <Route exact path="/clickygame" component={() => <ClickyGame cards={easycards} level={'easy'}/>} />
+              <Route exact path="/spaceshuffle" component={() => <ClickyGame cards={mediumcards} level={'medium'}/>}/>
+              <Route exact path="/earthshuffle" component={() => <ClickyGame cards={hardcards} level={'hard'}/>}/>
               <Route exact path="/trivia" component={TriviaGame} />
 
               <Route exact path="/hangman" component={Hangman} />
