@@ -70,6 +70,9 @@ if (process.env.NODE_ENV === 'production') {
 	app.use('/', (_, res) => {
 		res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
 	});
+	app.use('/img', (_, res) => {
+		res.sendFile(path.join(__dirname, 'client', 'build', 'img'));
+	});
 } else {
 	app.use('/', express.static(path.join(__dirname, 'client', 'public')))
 }
