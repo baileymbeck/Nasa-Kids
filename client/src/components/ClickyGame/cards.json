@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "image": "./img/img1.png",
+        "image": "/img/planets-easy/img1.png",
         "clicked": false
     },
     {
