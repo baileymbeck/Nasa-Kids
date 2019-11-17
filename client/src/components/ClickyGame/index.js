@@ -1,14 +1,13 @@
 import React, { Component } from "react";
 import ImageCard from "./components/ImageCard"; 
 import Title from "./components/Title";
-import cards from "./cards.json";
 import "./style.css";
 import api from "../../api";
 
 class App extends Component {
 
   state = {
-    cards,
+    cards: this.props.cards,
     score: 0,
     highscore: 0,
     rightWrong: "Click on a planet to earn points, but don't click on it more than once!",
@@ -81,7 +80,7 @@ class App extends Component {
 
 
   handleShuffle = () => {
-    let shuffledCards = this.shuffleArray(cards);
+    let shuffledCards = this.shuffleArray(this.props.cards);
     this.setState({ cards: shuffledCards });
   };
 
