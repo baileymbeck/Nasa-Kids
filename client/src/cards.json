@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "image": "./img/img1.png",
+        "clicked": false
+    },
+    {
+        "id": 2,
+        "image": "/img/planets-easy/img2.png",
+        "clicked": false
+    },
+    {
+        "id": 3,
+        "image": "/img/planets-easy/img3.png",
+        "clicked": false
+    },
+    {
+        "id": 4,
+        "image": "/img/planets-easy/img4.png",
+        "clicked": false
+    },
+    {
+        "id": 5,
+        "image": "/img/planets-easy/img5.png",
+        "clicked": false
+    },
+    {
+        "id": 6,
+        "image": "/img/planets-easy/img6.png",
+        "clicked": false
+    },
+    {
+        "id": 7,
+        "image": "/img/planets-easy/img7.png",
+        "clicked": false
+    },
+    {
+        "id": 8,
+        "image": "/img/planets-easy/img8.png",
+        "clicked": false
+    }
+]
