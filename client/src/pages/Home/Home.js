@@ -7,7 +7,8 @@ import Rocket from "./rocket.png";
 import { Link } from "react-router-dom";
 import Reading from "./reading.png";
 import Game from "./game.png";
-import SpaceCollage from "./spacecollage.gif"
+import SpaceCollage from "./spacecollage.gif";
+import Image from "./imageofday.jpg"
 
 class Home extends Component {
     state={
@@ -23,6 +24,7 @@ class Home extends Component {
             .then(res => this.setState({ result: res.data }))
             .catch(err => console.log(err));
     };
+    // {this.state.result.url}
 
     render() {
         return (
@@ -33,9 +35,9 @@ class Home extends Component {
                     </Col>
                 </Row>
                 <Row>
-                    <img className="imageofday" src={this.state.result.url}/>
+                    <img className="imageofday" src={Image}/>
                 </Row>
-                <Row><h4 className="imageofdaytitle">{this.state.result.title}</h4></Row>
+                <Row><h4 className="imageofdaytitle">{this.state.result.title}Hubble Spots a Curious Spiral</h4></Row>
                 <Row>
                     <Col size="md-3">
                         <Link to="/scores">
