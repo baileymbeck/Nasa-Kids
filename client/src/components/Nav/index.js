@@ -35,7 +35,7 @@ class Nav extends Component {
         <Link className="navbar-brand" to="/home">
             <img className="settings" src={Homeimg} />
         </Link>
-        <div className="title" style={{fontFamily: {Font1}}}>WELCOME Camila</div>
+        <div className="title" style={{fontFamily: {Font1}}}>WELCOME</div>
         <div>
             <img className="logo" src={Logo}/>
         </div>
