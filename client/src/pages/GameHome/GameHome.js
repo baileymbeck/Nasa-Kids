@@ -30,7 +30,7 @@ class GameHome extends Component {
                     </Col>
                     <Col size="md-3">
                         <Link to="/hangman">
-                            <Button text="Hangman" image={Hangman}></Button>
+                            <Button text="Earth Protector" image={Hangman}></Button>
                         </Link>
                     </Col>
                     <Col size="md-3">

@@ -51,9 +51,9 @@ class App extends Component {
               <Route exact path="/signup" component={SignUpPage} />
               <Route exact path="/scores" component={Scores} />
               {/* <Route exact path="/profile" component={} /> */}
-              <Route exact path="/clickygame" component={() => <ClickyGame cards={easycards} level={'easy'}/>} />
-              <Route exact path="/spaceshuffle" component={() => <ClickyGame cards={mediumcards} level={'medium'}/>}/>
-              <Route exact path="/earthshuffle" component={() => <ClickyGame cards={hardcards} level={'hard'}/>}/>
+              <Route exact path="/clickygame" component={() => <ClickyGame cards={easycards} level={'easy'} title="Planet Shuffle"/>} />
+              <Route exact path="/spaceshuffle" component={() => <ClickyGame cards={mediumcards} level={'medium'} title="Space Shuffle"/>}/>
+              <Route exact path="/earthshuffle" component={() => <ClickyGame cards={hardcards} level={'hard'} title="Earth Shuffle"/>}/>
               <Route exact path="/trivia" component={TriviaGame} />
 
               <Route exact path="/hangman" component={Hangman} />

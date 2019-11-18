@@ -4,7 +4,7 @@ import "./style.css";
 function Title(props) {
   return (
     <div className="header">
-        <div className="planet-title">{props.children} Planet Shuffle!</div>
+        <div className="planet-title">{props.title}</div>
         <div className="scores">
         Score: {props.score} Highscore: {props.highscore}
         </div>

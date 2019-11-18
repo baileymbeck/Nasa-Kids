@@ -70,8 +70,9 @@ class App extends Component {
     cards: this.props.cards.map((card, i) => ({...card, image: images[this.props.level][i]})),
     score: 0,
     highscore: 0,
-    rightWrong: "Click on a planet to earn points, but don't click on it more than once!",
-    clicked:[]
+    rightWrong: "Click on an image to earn points, but don't click on it more than once!",
+    clicked:[],
+    title: this.props.title
 
   };
 
@@ -104,13 +105,13 @@ class App extends Component {
     const newScore = this.state.score + 1;
     this.setState({
       score: newScore,
-      rightWrong: "Click on a planet to earn points, but don't click on it more than once!"
+      rightWrong: "Click on an image to earn points, but don't click on it more than once!"
     });
     if (newScore >= this.state.highscore) {
       this.setState({ highscore: newScore });
-    }
-    else if (newScore === 8) {
-      this.setState({ rightWrong: "You win!" });
+      if (newScore === 8) {
+        this.setState({ rightWrong: "You win!" })
+      }
     }
     this.handleShuffle();
   
@@ -148,7 +149,7 @@ class App extends Component {
   render() {
     return (
       <div className="row-game">
-      <Title score={this.state.score} highscore={this.state.highscore} rightWrong={this.state.rightWrong}></Title>
+      <Title score={this.state.score} highscore={this.state.highscore} rightWrong={this.state.rightWrong} title={this.state.title}></Title>
         <div className="layout">{this.state.cards.map((card, i) => (
           <ImageCard 
             id={card.id}
