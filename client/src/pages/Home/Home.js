@@ -25,6 +25,7 @@ class Home extends Component {
             .catch(err => console.log(err));
     };
     // {this.state.result.url}
+    // {this.state.result.title}
 
     render() {
         return (
@@ -37,7 +38,7 @@ class Home extends Component {
                 <Row>
                     <img className="imageofday" src={Image}/>
                 </Row>
-                <Row><h4 className="imageofdaytitle">{this.state.result.title}Hubble Spots a Curious Spiral</h4></Row>
+                <Row><h4 className="imageofdaytitle">Hubble Spots a Curious Spiral</h4></Row>
                 <Row>
                     <Col size="md-3">
                         <Link to="/scores">
