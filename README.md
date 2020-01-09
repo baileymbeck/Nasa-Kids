@@ -2,6 +2,60 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Deployed App
 https://nasa-stage.herokuapp.com/
 
+# Project Name
+> Here goes your awesome project description!
+​
+## Table of contents
+* [General info](#general-info)
+* [Screenshots](#screenshots)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [Features](#features)
+* [Status](#status)
+* [Inspiration](#inspiration)
+* [Contact](#contact)
+​
+## General info
+Add more general information about project. What the purpose of the project is? Motivation?
+​
+
+## Screenshots
+![Example screenshot](./img/screenshot.png)
+​
+
+## Technologies
+* React JS
+* Javascript
+* MongoDB
+* Heroku
+* Bcrypt
+* Axios
+* Express
+
+
+## Code Examples
+Show examples of usage:
+`put-your-code-here`
+​
+## Features
+List of features ready and TODOs for future development
+* Spanish language option
+* Save the Planet animation
+
+To-do list:
+* User authentication
+* Score display
+* Cool pictures page
+
+## Status
+
+Project is: in progress due to our continued studies, the team has benched the project for the time.
+
+## Inspiration
+
+This project was inspired by the children of the development team. We set out to create an engaging platform to fuel kid's interest in space using our exploring the capabilities of React. There are still items on our workflow to finish, but for now the framework illustrates our main game sequences.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
