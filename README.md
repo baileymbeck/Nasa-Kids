@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 https://nasa-stage.herokuapp.com/
 
 # Project Name
-> Here goes your awesome project description!
+In this project our team took the opportunity to explore the capabilities of React. We incorporated word games and puzzles to create an engaging app for kids!
 ​
 ## Table of contents
 * [General info](#general-info)
